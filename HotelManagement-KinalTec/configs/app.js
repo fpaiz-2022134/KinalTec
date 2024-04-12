@@ -6,8 +6,6 @@ import morgan from 'morgan'
 import { config } from 'dotenv'
 
 
-
-
 //Configuration
 const app = express()
 config()
@@ -25,10 +23,7 @@ app.use(morgan('dev'))
 
 //Routes
 
-
-
 //Levantamos el servidor
-
 export const initServer = ()=>{
     app.listen(port)
     console.log(`Server HTTP running in port ${port}`)
