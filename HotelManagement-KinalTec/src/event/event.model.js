@@ -12,11 +12,11 @@ const eventSchema = Schema({
         required: true
     },
     entryDate: {
-        type: date,
+        type: Date,
         required: true
     },
     departureDate: {
-        type: date,
+        type: Date,
         required: true
     },
     status: {
@@ -27,7 +27,7 @@ const eventSchema = Schema({
         type: Number,
         required: true
     },
-    user: {
+/*    user: {
         type: Schema.ObjectId,
         ref: 'user',
         required: true
@@ -36,7 +36,7 @@ const eventSchema = Schema({
         type: Schema.ObjectId,
         ref: 'hotel',
         required: true
-    } 
+    } */
  }) 
 
 export default model('event', eventSchema)
