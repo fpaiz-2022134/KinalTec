@@ -1,0 +1,189 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "HotelManagement",
+    "dateExported": "2024-04-12T23:40:25.693Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "6208c760-e208-48a6-af62-64c3ba8aae18",
+            "name": "service",
+            "containerId": "",
+            "created": "2024-04-12T17:11:23.422Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "39a0647b-fa7d-4356-b94b-8a32e5f5d105",
+            "name": "hotel",
+            "containerId": "",
+            "created": "2024-04-12T17:17:52.566Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "cabe5c57-c625-4b1c-bba2-5a075dbef4f2",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-04-12T17:22:58.133Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "f3eb5ba9-3f57-4f53-a0e8-f71b79f98318",
+            "name": "room",
+            "containerId": "",
+            "created": "2024-04-12T17:44:52.068Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "30f01a9e-15bd-4289-a433-4194eaca028e",
+            "name": "event",
+            "containerId": "",
+            "created": "2024-04-12T17:45:57.536Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "70d63679-f665-44cd-b5b7-11776c935b26",
+            "name": "reservation",
+            "containerId": "",
+            "created": "2024-04-12T17:46:05.664Z",
+            "sortNum": 70000
+        },
+        {
+            "_id": "2e9d6c2d-d766-4b6d-b8eb-c7c3376cb703",
+            "name": "invoice",
+            "containerId": "",
+            "created": "2024-04-12T17:46:13.344Z",
+            "sortNum": 80000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "0f223da5-4fa1-4293-a25e-afabae575777",
+            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
+            "containerId": "6208c760-e208-48a6-af62-64c3ba8aae18",
+            "name": "add",
+            "url": "/service/save",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-12T17:11:43.718Z",
+            "modified": "2024-04-12T17:17:27.452Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Piscina"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Acceso a la piscina en distintos horarios."
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "fbf1e04f-6dfb-4bd4-a182-1cd9547affe5",
+            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
+            "containerId": "39a0647b-fa7d-4356-b94b-8a32e5f5d105",
+            "name": "add",
+            "url": "/hotel/addHotel",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-12T17:18:04.450Z",
+            "modified": "2024-04-12T17:20:51.145Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Hotel Barcelo"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Hotel delujo posicionado entre los mejores del país."
+                    },
+                    {
+                        "name": "address",
+                        "value": "Zona 1, Guatemala."
+                    },
+                    {
+                        "name": "phone",
+                        "value": "22334455"
+                    },
+                    {
+                        "name": "email",
+                        "value": "hotelbarcelo@gmail.com"
+                    },
+                    {
+                        "name": "assessment",
+                        "value": "7.5 (Bueno)"
+                    },
+                    {
+                        "name": "service",
+                        "value": "66196ca7278160a307adb3d8"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "66fa8b55-a5d9-47cf-bbdb-b0e0ffe33eac",
+            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
+            "containerId": "cabe5c57-c625-4b1c-bba2-5a075dbef4f2",
+            "name": "register",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-04-12T17:23:07.232Z",
+            "modified": "2024-04-12T17:27:15.810Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Franco"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Paiz"
+                    },
+                    {
+                        "name": "email",
+                        "value": "fpaiz@gmail.com"
+                    },
+                    {
+                        "name": "username",
+                        "value": "fpaiz2"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "rol",
+                        "value": "",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    }
+}
