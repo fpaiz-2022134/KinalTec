@@ -9,7 +9,7 @@ import { config } from 'dotenv'
 import userRoutes from '../src/user/user.routes.js'
 import hotelRoutes from '../src/hotel/hotel.routes.js'
 import serviceRoutes from '../src/service/service.routes.js'
-
+import roomRoutes from '../src/room/room.routes.js'
 
 
 //Configuration
@@ -31,7 +31,7 @@ app.use(morgan('dev'))
 app.use('/user', userRoutes)
 app.use('/hotel',hotelRoutes)
 app.use('/service',serviceRoutes)
-
+app.use('/room', roomRoutes)
 
 //Levantamos el servidor
 
