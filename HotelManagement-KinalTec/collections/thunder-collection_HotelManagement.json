@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "HotelManagement",
-    "dateExported": "2024-04-12T23:39:19.846Z",
+    "dateExported": "2024-04-16T06:32:41.217Z",
     "version": "1.1",
     "folders": [
         {
@@ -52,6 +52,13 @@
             "containerId": "",
             "created": "2024-04-12T17:46:13.344Z",
             "sortNum": 80000
+        },
+        {
+            "_id": "1968fc4d-03d8-42ca-ae7e-24e101470239",
+            "name": "category",
+            "containerId": "",
+            "created": "2024-04-16T05:39:11.325Z",
+            "sortNum": 90000
         }
     ],
     "requests": [
@@ -87,12 +94,12 @@
             "_id": "fbf1e04f-6dfb-4bd4-a182-1cd9547affe5",
             "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
             "containerId": "39a0647b-fa7d-4356-b94b-8a32e5f5d105",
-            "name": "add",
+            "name": "addHotel",
             "url": "/hotel/addHotel",
             "method": "POST",
             "sortNum": 20000,
             "created": "2024-04-12T17:18:04.450Z",
-            "modified": "2024-04-12T17:20:51.145Z",
+            "modified": "2024-04-16T04:39:48.042Z",
             "headers": [],
             "params": [],
             "body": {
@@ -117,7 +124,7 @@
                     },
                     {
                         "name": "email",
-                        "value": "hotelbarcelo@gmail.com"
+                        "value": "hotelbarcelo3@gmail.com"
                     },
                     {
                         "name": "assessment",
@@ -126,6 +133,11 @@
                     {
                         "name": "service",
                         "value": "66196ca7278160a307adb3d8"
+                    },
+                    {
+                        "name": "service",
+                        "value": "66196ca7278160a307adb3d8",
+                        "isDisabled": true
                     }
                 ]
             },
@@ -178,6 +190,170 @@
                     }
                 ]
             },
+            "tests": []
+        },
+        {
+            "_id": "59954cf6-840c-475d-bb6b-4e1d1d6e3cd5",
+            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
+            "containerId": "39a0647b-fa7d-4356-b94b-8a32e5f5d105",
+            "name": "getHotels",
+            "url": "/hotel/getHotels",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-04-16T05:33:19.028Z",
+            "modified": "2024-04-16T05:34:47.552Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "38c2f3fa-e048-429f-b8e4-d28aa8b52104",
+            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
+            "containerId": "39a0647b-fa7d-4356-b94b-8a32e5f5d105",
+            "name": "getHotel",
+            "url": "/hotel/getHotel/661e0114a94546ee4273c702",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-04-16T05:33:25.414Z",
+            "modified": "2024-04-16T05:35:09.053Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f5c23003-e705-4380-8906-c1472498d7e7",
+            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
+            "containerId": "39a0647b-fa7d-4356-b94b-8a32e5f5d105",
+            "name": "updateHotel",
+            "url": "/hotel/updateHotel/661e0114a94546ee4273c702",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-04-16T05:33:34.734Z",
+            "modified": "2024-04-16T05:38:24.526Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Hotel California"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "23435665"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "39b637da-68cf-4c00-bfaf-f6f33a490f74",
+            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
+            "containerId": "39a0647b-fa7d-4356-b94b-8a32e5f5d105",
+            "name": "deleteHotel",
+            "url": "/hotel/deleteHotel/6619c75bee1a3bdef8a711fd",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-04-16T05:33:41.278Z",
+            "modified": "2024-04-16T05:38:44.490Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "720464c9-962e-415f-9529-f3f0e3dfbbe6",
+            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
+            "containerId": "1968fc4d-03d8-42ca-ae7e-24e101470239",
+            "name": "addCategory",
+            "url": "/category/addCategory",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-04-16T05:39:21.940Z",
+            "modified": "2024-04-16T06:19:33.890Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Boutique"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Establecimientos pequeños y exclusivos, generalmente con un enfoque en diseño, servicio personalizado y experiencias únicas para los huéspedes."
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "24bb8883-e618-4d6c-bf0d-d9ef5b718642",
+            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
+            "containerId": "1968fc4d-03d8-42ca-ae7e-24e101470239",
+            "name": "getCategories",
+            "url": "/category/getCategories",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-04-16T05:39:53.787Z",
+            "modified": "2024-04-16T06:19:09.188Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "16c0c7a6-e990-443b-a10b-d456331f0bb5",
+            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
+            "containerId": "1968fc4d-03d8-42ca-ae7e-24e101470239",
+            "name": "getCategory",
+            "url": "/category/getCategory/661e1875d218cea49fd0dde5",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-04-16T05:40:03.691Z",
+            "modified": "2024-04-16T06:22:12.915Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f1233808-318a-4c6c-bb7b-57452010ec1c",
+            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
+            "containerId": "1968fc4d-03d8-42ca-ae7e-24e101470239",
+            "name": "updateCategory",
+            "url": "/category/updateCategory/661e1835d218cea49fd0dde2",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-04-16T05:40:11.604Z",
+            "modified": "2024-04-16T06:23:25.457Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Hotel Resort"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a7791b6f-05d1-471a-aefb-92324701b15f",
+            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
+            "containerId": "1968fc4d-03d8-42ca-ae7e-24e101470239",
+            "name": "deleteCategory",
+            "url": "/category/deleteCategory/661e1b5dac94aec91438cc6d",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-04-16T05:40:19.875Z",
+            "modified": "2024-04-16T06:32:22.345Z",
+            "headers": [],
+            "params": [],
             "tests": []
         }
     ],

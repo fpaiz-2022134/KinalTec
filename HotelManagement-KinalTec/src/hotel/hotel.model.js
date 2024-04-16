@@ -28,14 +28,21 @@ const hotelSchema = Schema({
     assessment: {
         type: String,
         required: true
-    },
+    } ,
     service: {
         type: [{
             type: Schema.Types.ObjectId,
             ref: 'Service',
             required: true
         }]
-    } 
+    }
+        
+        /* ,
+    category:{
+        type: Schema.Types.ObjectId,
+        ref: 'Category',
+        required: true
+    }   */
 })
 
 export default model ('hotel', hotelSchema)
