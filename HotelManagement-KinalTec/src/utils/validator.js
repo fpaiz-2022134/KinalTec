@@ -1,7 +1,7 @@
 // Encriptar, Validar... diferentes datos
-
+ 
 import { compare, hash } from 'bcrypt'
-
+ 
 export const encrypt = async (password) => {
     try {
         return await hash(password, 10)
@@ -10,8 +10,8 @@ export const encrypt = async (password) => {
         return err
     }
 }
-
-
+ 
+ 
 export const checkPassword = async (password, hash) => {
     try {
         return await compare(password, hash)
@@ -20,7 +20,7 @@ export const checkPassword = async (password, hash) => {
         return err
     }
 }
-
+ 
 export const checkEmail = async (email, hash) => {
     try {
         return await compare(email, hash)
@@ -29,7 +29,7 @@ export const checkEmail = async (email, hash) => {
         return err
     }
 }
-
+ 
 export const checkUpdate = (data, userId) => {
     if (userId) {
         if (
@@ -41,4 +41,5 @@ export const checkUpdate = (data, userId) => {
         ) return false
         return true
     } return false
+    return true
 }

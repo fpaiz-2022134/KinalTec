@@ -1,0 +1,365 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "HotelManagement",
+    "dateExported": "2024-04-19T01:37:18.104Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "98701444-70aa-4db1-98ec-c9cfc014c374",
+            "name": "service",
+            "containerId": "",
+            "created": "2024-04-19T01:33:19.810Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "add5c245-1185-4590-a6ed-f7b8290ab3a3",
+            "name": "hotel",
+            "containerId": "",
+            "created": "2024-04-19T01:33:19.811Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "9cc1b1c4-a8b5-4c27-9b36-ba8fe96aab1d",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-04-19T01:33:19.812Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "067b95ae-007c-477e-a20f-74b26cdd3c44",
+            "name": "room",
+            "containerId": "",
+            "created": "2024-04-19T01:33:19.813Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "cf44e029-6248-481f-9eaf-538f34552c05",
+            "name": "event",
+            "containerId": "",
+            "created": "2024-04-19T01:33:19.814Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "57e35f64-0e70-4997-bddc-0617b3f8a51d",
+            "name": "reservation",
+            "containerId": "",
+            "created": "2024-04-19T01:33:19.815Z",
+            "sortNum": 70000
+        },
+        {
+            "_id": "6f189a8f-e023-42a8-b653-91f8a8cdf6cc",
+            "name": "invoice",
+            "containerId": "",
+            "created": "2024-04-19T01:33:19.816Z",
+            "sortNum": 80000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "ee8cacc5-54b1-4723-a615-e0bb6bcb7a27",
+            "colId": "b85da282-1576-48d9-9c5e-341ffe46ef27",
+            "containerId": "add5c245-1185-4590-a6ed-f7b8290ab3a3",
+            "name": "add",
+            "url": "/hotel/addHotel",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-19T01:33:19.812Z",
+            "modified": "2024-04-19T01:33:19.812Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Hotel Barcelo"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Hotel delujo posicionado entre los mejores del país."
+                    },
+                    {
+                        "name": "address",
+                        "value": "Zona 1, Guatemala."
+                    },
+                    {
+                        "name": "phone",
+                        "value": "22334455"
+                    },
+                    {
+                        "name": "email",
+                        "value": "hotelbarcelo@gmail.com"
+                    },
+                    {
+                        "name": "assessment",
+                        "value": "7.5 (Bueno)"
+                    },
+                    {
+                        "name": "service",
+                        "value": "66196ca7278160a307adb3d8"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "237b48d0-8ca8-45d6-8020-c2de885527b4",
+            "colId": "b85da282-1576-48d9-9c5e-341ffe46ef27",
+            "containerId": "98701444-70aa-4db1-98ec-c9cfc014c374",
+            "name": "saveService",
+            "url": "/service/save",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-19T01:35:00.361Z",
+            "modified": "2024-04-19T01:35:00.361Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE4YmU1OTBmZmZhODBlODA2OTNkMzQiLCJ1c2VybmFtZSI6Imp0b3JyZXMiLCJuYW1lIjoianVhbiIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzEzMDYxMjU4LCJleHAiOjE3MTMwNzIwNTh9.M-d6gwQhs8arQ1V91hjGn6cdF7ZM37q_5xpMxXErIJw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "room"
+                    },
+                    {
+                        "name": "description",
+                        "value": "this is the room service, the service is used to checkout your room and cualified it is cleaned"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "68c9c274-e036-46bb-8943-a3bff36f2455",
+            "colId": "b85da282-1576-48d9-9c5e-341ffe46ef27",
+            "containerId": "98701444-70aa-4db1-98ec-c9cfc014c374",
+            "name": "updateService",
+            "url": "/service/update/661b3db1ae1c52784e459a05",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-04-19T01:35:10.065Z",
+            "modified": "2024-04-19T01:35:10.065Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE4YmU1OTBmZmZhODBlODA2OTNkMzQiLCJ1c2VybmFtZSI6Imp0b3JyZXMiLCJuYW1lIjoianVhbiIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzEzMDYxMjU4LCJleHAiOjE3MTMwNzIwNTh9.M-d6gwQhs8arQ1V91hjGn6cdF7ZM37q_5xpMxXErIJw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "description",
+                        "value": "Here is the room services a good services for the clients"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f9a56977-9982-4bfc-89c9-ff66c7963388",
+            "colId": "b85da282-1576-48d9-9c5e-341ffe46ef27",
+            "containerId": "9cc1b1c4-a8b5-4c27-9b36-ba8fe96aab1d",
+            "name": "register",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-04-19T01:33:44.590Z",
+            "modified": "2024-04-19T01:33:44.590Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "tomas"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "reyes"
+                    },
+                    {
+                        "name": "email",
+                        "value": "treyes@gmail.com"
+                    },
+                    {
+                        "name": "username",
+                        "value": "treyes"
+                    },
+                    {
+                        "name": "password",
+                        "value": "111"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "33334444"
+                    },
+                    {
+                        "name": "rol",
+                        "value": "CLIENT"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c4f2eb6a-a5b1-457e-b07f-73ae1714bb25",
+            "colId": "b85da282-1576-48d9-9c5e-341ffe46ef27",
+            "containerId": "98701444-70aa-4db1-98ec-c9cfc014c374",
+            "name": "deleteService",
+            "url": "/service/delete/661b0298ae1c52784e4599fd",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-04-19T01:35:15.099Z",
+            "modified": "2024-04-19T01:35:15.099Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE4YmU1OTBmZmZhODBlODA2OTNkMzQiLCJ1c2VybmFtZSI6Imp0b3JyZXMiLCJuYW1lIjoianVhbiIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzEzMDM4OTE3LCJleHAiOjE3MTMwNDk3MTd9.PEkYu-2TazHLV_TbToCKmtJOcy3fS7w8u4KEXn-fRF4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "room"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "1b670787-7dff-4682-b205-ad63be306ce1",
+            "colId": "b85da282-1576-48d9-9c5e-341ffe46ef27",
+            "containerId": "9cc1b1c4-a8b5-4c27-9b36-ba8fe96aab1d",
+            "name": "update Copy",
+            "url": "/user/update/661ae534326273e5823b631b",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-04-19T01:34:14.965Z",
+            "modified": "2024-04-19T01:34:14.965Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE4YmU1OTBmZmZhODBlODA2OTNkMzQiLCJ1c2VybmFtZSI6Imp0b3JyZXMiLCJuYW1lIjoianVhbiIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzEzMDM4OTE3LCJleHAiOjE3MTMwNDk3MTd9.PEkYu-2TazHLV_TbToCKmtJOcy3fS7w8u4KEXn-fRF4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "ricardogeminis"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c874bb50-f455-4873-b639-487be76c092c",
+            "colId": "b85da282-1576-48d9-9c5e-341ffe46ef27",
+            "containerId": "98701444-70aa-4db1-98ec-c9cfc014c374",
+            "name": "getServices",
+            "url": "/service/get",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-04-19T01:35:18.250Z",
+            "modified": "2024-04-19T01:35:18.250Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2efbb31a-cbe4-43cc-a248-b7f929b2c45c",
+            "colId": "b85da282-1576-48d9-9c5e-341ffe46ef27",
+            "containerId": "9cc1b1c4-a8b5-4c27-9b36-ba8fe96aab1d",
+            "name": "delete Copy",
+            "url": "/user/delete/661af08a77ae234f87d9d743",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-04-19T01:34:24.546Z",
+            "modified": "2024-04-19T01:34:24.546Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE4YmU1OTBmZmZhODBlODA2OTNkMzQiLCJ1c2VybmFtZSI6Imp0b3JyZXMiLCJuYW1lIjoianVhbiIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzEzMDM4OTE3LCJleHAiOjE3MTMwNDk3MTd9.PEkYu-2TazHLV_TbToCKmtJOcy3fS7w8u4KEXn-fRF4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "treyes"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "829905a8-93e8-4440-b290-6f2ffef49e48",
+            "colId": "b85da282-1576-48d9-9c5e-341ffe46ef27",
+            "containerId": "9cc1b1c4-a8b5-4c27-9b36-ba8fe96aab1d",
+            "name": "get Copy",
+            "url": "/user/get",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-04-19T01:34:33.599Z",
+            "modified": "2024-04-19T01:34:33.599Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5507b56a-8479-42c1-bd81-4c520c467a29",
+            "colId": "b85da282-1576-48d9-9c5e-341ffe46ef27",
+            "containerId": "9cc1b1c4-a8b5-4c27-9b36-ba8fe96aab1d",
+            "name": "login Copy",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-04-19T01:34:42.493Z",
+            "modified": "2024-04-19T01:34:42.493Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "jtorres"
+                    },
+                    {
+                        "name": "email",
+                        "value": "jtorres@gmail.com"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    }
+}
