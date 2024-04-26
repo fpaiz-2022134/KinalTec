@@ -2,6 +2,7 @@
 
 import { checkUpdate } from '../utils/validator.js'
 import Service from './service.model.js'
+import Hotel from '../hotel/hotel.model.js'
 
 export const saveS = async(req, res)=>{
     try{
@@ -54,5 +55,29 @@ export const getS = async(req, res)=>{
     }catch(err){
         console.error(err)
         return res.status(500).send({message: 'Error getting Services'})
+    }
+}
+
+export const searchS = async(req, res)=>{
+    try{
+        let { id } = await req.params
+        let service = await Service.findOne({_id: id})
+        if(!service) return res.status(404).send({message: 'Service not found'})
+        return res.send({service})
+    }catch(err){
+        console.error(err)
+        return res.status(500).send({message: 'Error finding service'})
+    }
+}
+
+export const getHotels = async(req, res)=>{
+    try{
+        let { id } = await req.params
+        let hotels = await Hotel.find({_id: id})
+        if(!hotels) return res.status(404).send({message: 'Hotel not found'})
+        return res.send({ hotels })
+    }catch(err){
+        console.error(err)
+        return res.status(500).send({message: 'Error getting hotels'})
     }
 }

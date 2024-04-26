@@ -12,13 +12,55 @@ export const registerU = async (req, res) => {
     try {
         let data = req.body
         data.password = await encrypt(data.password)
-        data.role = 'CLIENT'
+        data.rol = 'CLIENT'
         let user = await User(data)
         await user.save()
         return res.status(200).send({message: 'User registered successfully.'})
     } catch (err) {
         console.error(err)
         return res.status(500).send({ message: 'Error registering user' })
+    }
+}
+
+export const defaultAdmin = async(nameA, surnameA, usernameA, emailA, passwordA, phoneA, rolA)=> {
+    try{
+        let admin = await User.findOne({ rol: 'ADMIN'})
+        if(!admin){
+            const data = {
+                name: nameA,
+                surname: surnameA,
+                username: usernameA,
+                email: emailA,
+                password: await encrypt(passwordA),
+                phone: phoneA,
+                rol: rolA
+            }
+            let user = new User(data)
+            await user.save()
+            return console.log('Default admin has been created')
+        } else {
+            return console.log('Default admin cannot be created')
+        }
+    }catch(err){
+        console.error(err)
+    }
+}
+
+defaultAdmin('Luis', 'Marroquin', 'lmarroquin', 'lmarroquin@gmail.com', '234', '56566565', 'ADMIN')
+
+
+export const changeRol = async(req, res)=> {
+    try{
+        let { id } = req.params
+        let { rol } = req.body
+        let user = await User.findOne({_id: id})
+        if(!user) return res.status(404).send({message: 'User not found'})
+        user.rol = rol
+        await user.save()
+        return res.send({message: 'Rol changed successfull'})
+    }catch(err){
+        console.error(err)
+        return res.status(500).send({message: 'Error changing roles'})
     }
 }
 
@@ -93,5 +135,17 @@ export const getU = async(req, res)=>{
     }catch(err){
         console.error(err)
         return res.status(500).send({message: 'Error getting users'})
+    }
+}
+
+export const searchU = async(req, res)=>{
+    try{
+        let { id } = req.params
+        let user = await User.findOne({_id: id})
+        if(!user)return res.status(404).send({message: 'User not found'})
+        return res.send({user})
+    }catch(err){
+        console.error(err)
+        return res.status(500).send({message: 'Error getting user'})
     }
 }

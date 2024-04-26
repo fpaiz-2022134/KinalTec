@@ -36,8 +36,8 @@ export const checkUpdate = (data, userId) => {
             Object.entries(data).length === 0 ||
             data.password ||
             data.password == '' ||
-            data.role ||
-            data.role == ''
+            data.rol ||
+            data.rol == ''
         ) return false
         return true
     } return false

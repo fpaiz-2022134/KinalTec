@@ -1,0 +1,446 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "HotelManagement",
+    "dateExported": "2024-04-26T23:01:06.932Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "a9e2a276-b7bc-434f-908d-dfda0e91eb63",
+            "name": "service",
+            "containerId": "",
+            "created": "2024-04-26T19:21:45.425Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "86c35851-3bdf-4ba2-a68b-436ea6268830",
+            "name": "hotel",
+            "containerId": "",
+            "created": "2024-04-26T19:21:45.426Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "d89616ce-4b79-466b-8035-148e1449578a",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-04-26T19:21:45.427Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "c9711a65-f825-429a-9cf2-2c5b25e36157",
+            "name": "room",
+            "containerId": "",
+            "created": "2024-04-26T19:21:45.428Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "1daa151b-48e8-4c91-b9b8-c334b42fea98",
+            "name": "event",
+            "containerId": "",
+            "created": "2024-04-26T19:21:45.429Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "1d9c2a52-dfc3-43fa-9558-900fec7dd7a7",
+            "name": "reservation",
+            "containerId": "",
+            "created": "2024-04-26T19:21:45.430Z",
+            "sortNum": 70000
+        },
+        {
+            "_id": "2128dfb6-6b8f-40bc-9f7e-998ddec536ec",
+            "name": "invoice",
+            "containerId": "",
+            "created": "2024-04-26T19:21:45.431Z",
+            "sortNum": 80000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "3519678e-f690-486a-9d68-4cea2adce2a2",
+            "colId": "91a3f7d2-0edf-46c4-b251-d1ba751be39a",
+            "containerId": "86c35851-3bdf-4ba2-a68b-436ea6268830",
+            "name": "add",
+            "url": "/hotel/addHotel",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-26T19:21:45.425Z",
+            "modified": "2024-04-26T19:21:45.425Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Hotel Barcelo"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Hotel delujo posicionado entre los mejores del país."
+                    },
+                    {
+                        "name": "address",
+                        "value": "Zona 1, Guatemala."
+                    },
+                    {
+                        "name": "phone",
+                        "value": "22334455"
+                    },
+                    {
+                        "name": "email",
+                        "value": "hotelbarcelo@gmail.com"
+                    },
+                    {
+                        "name": "assessment",
+                        "value": "7.5 (Bueno)"
+                    },
+                    {
+                        "name": "service",
+                        "value": "66196ca7278160a307adb3d8"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e8b9402c-7382-4c5f-a509-4816ee510cce",
+            "colId": "91a3f7d2-0edf-46c4-b251-d1ba751be39a",
+            "containerId": "a9e2a276-b7bc-434f-908d-dfda0e91eb63",
+            "name": "saveService",
+            "url": "/service/save",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-26T19:21:45.431Z",
+            "modified": "2024-04-26T21:45:52.364Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDA2YzZiOGZhOGE3OTIwZWEwYmIiLCJ1c2VybmFtZSI6Imp0b3JyZXMiLCJuYW1lIjoianVhbiIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTY3Njk5LCJleHAiOjE3MTQxNzg0OTl9.HMogDvm5cC9PeGTE8X2YVkw_s587r_s215t59DQbTUQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "pool"
+                    },
+                    {
+                        "name": "description",
+                        "value": "this is the pool service, the service is used to watch all clients to used pool."
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "628c939e-ca14-4b00-8827-c4622cdd44cf",
+            "colId": "91a3f7d2-0edf-46c4-b251-d1ba751be39a",
+            "containerId": "a9e2a276-b7bc-434f-908d-dfda0e91eb63",
+            "name": "updateService",
+            "url": "/service/update/662c07fc09ffd1e4cd7e543b",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-04-26T19:21:45.432Z",
+            "modified": "2024-04-26T21:47:06.851Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDA2YzZiOGZhOGE3OTIwZWEwYmIiLCJ1c2VybmFtZSI6Imp0b3JyZXMiLCJuYW1lIjoianVhbiIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTY3Njk5LCJleHAiOjE3MTQxNzg0OTl9.HMogDvm5cC9PeGTE8X2YVkw_s587r_s215t59DQbTUQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "description",
+                        "value": "this is the room service, the service is used to checkout your room and cualified it is cleaned"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "cd6bc041-977b-4b85-ba9c-4c031aade743",
+            "colId": "91a3f7d2-0edf-46c4-b251-d1ba751be39a",
+            "containerId": "d89616ce-4b79-466b-8035-148e1449578a",
+            "name": "register",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-04-26T19:21:45.426Z",
+            "modified": "2024-04-26T21:41:33.267Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "tomas"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "torres"
+                    },
+                    {
+                        "name": "email",
+                        "value": "ttorres@gmail.com"
+                    },
+                    {
+                        "name": "username",
+                        "value": "ttorres"
+                    },
+                    {
+                        "name": "password",
+                        "value": "333"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "77778888"
+                    },
+                    {
+                        "name": "rol",
+                        "value": "CLIENT"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9260362f-a36b-4b10-a7d2-1ea4d1481ca3",
+            "colId": "91a3f7d2-0edf-46c4-b251-d1ba751be39a",
+            "containerId": "a9e2a276-b7bc-434f-908d-dfda0e91eb63",
+            "name": "deleteService",
+            "url": "/service/delete/662c2090edbfc7e920cae404",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-04-26T19:21:45.433Z",
+            "modified": "2024-04-26T21:47:37.780Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDA2YzZiOGZhOGE3OTIwZWEwYmIiLCJ1c2VybmFtZSI6Imp0b3JyZXMiLCJuYW1lIjoianVhbiIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTY3Njk5LCJleHAiOjE3MTQxNzg0OTl9.HMogDvm5cC9PeGTE8X2YVkw_s587r_s215t59DQbTUQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "pool"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "24484065-f681-4c80-9c6c-d758b5a654ae",
+            "colId": "91a3f7d2-0edf-46c4-b251-d1ba751be39a",
+            "containerId": "d89616ce-4b79-466b-8035-148e1449578a",
+            "name": "update",
+            "url": "/user/update/662c1f8dedbfc7e920cae3f5",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-04-26T19:21:45.427Z",
+            "modified": "2024-04-26T21:43:49.538Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDA2YzZiOGZhOGE3OTIwZWEwYmIiLCJ1c2VybmFtZSI6Imp0b3JyZXMiLCJuYW1lIjoianVhbiIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTY3Njk5LCJleHAiOjE3MTQxNzg0OTl9.HMogDvm5cC9PeGTE8X2YVkw_s587r_s215t59DQbTUQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "ttorres"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "dac3a5c4-0c4b-424a-90c3-e39f8daf72e4",
+            "colId": "91a3f7d2-0edf-46c4-b251-d1ba751be39a",
+            "containerId": "a9e2a276-b7bc-434f-908d-dfda0e91eb63",
+            "name": "getServices",
+            "url": "/service/get",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-04-26T19:21:45.434Z",
+            "modified": "2024-04-26T19:21:45.434Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "309345df-c41c-497c-82cd-4974541dffdb",
+            "colId": "91a3f7d2-0edf-46c4-b251-d1ba751be39a",
+            "containerId": "d89616ce-4b79-466b-8035-148e1449578a",
+            "name": "delete",
+            "url": "/user/delete/662c001c6b8fa8a7920ea0b9",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-04-26T19:21:45.428Z",
+            "modified": "2024-04-26T21:42:23.757Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDA2YzZiOGZhOGE3OTIwZWEwYmIiLCJ1c2VybmFtZSI6Imp0b3JyZXMiLCJuYW1lIjoianVhbiIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTY3Njk5LCJleHAiOjE3MTQxNzg0OTl9.HMogDvm5cC9PeGTE8X2YVkw_s587r_s215t59DQbTUQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "treyes"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e13a2cb6-359f-4fb7-bd95-b88f0ffccfb1",
+            "colId": "91a3f7d2-0edf-46c4-b251-d1ba751be39a",
+            "containerId": "d89616ce-4b79-466b-8035-148e1449578a",
+            "name": "get",
+            "url": "/user/get",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-04-26T19:21:45.429Z",
+            "modified": "2024-04-26T19:21:45.429Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "049c83d4-85c4-41c9-bfe7-8411b7e74151",
+            "colId": "91a3f7d2-0edf-46c4-b251-d1ba751be39a",
+            "containerId": "d89616ce-4b79-466b-8035-148e1449578a",
+            "name": "login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-04-26T19:21:45.430Z",
+            "modified": "2024-04-26T19:37:11.380Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "jtorres",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "email",
+                        "value": "jtorres@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "ce478485-efff-4025-9178-2150ca663a63",
+            "colId": "91a3f7d2-0edf-46c4-b251-d1ba751be39a",
+            "containerId": "d89616ce-4b79-466b-8035-148e1449578a",
+            "name": "search",
+            "url": "/user/search/662c006c6b8fa8a7920ea0bb",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-04-26T19:24:45.568Z",
+            "modified": "2024-04-26T21:44:15.728Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "jtorres"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "74b15598-f11d-4c4e-b788-6c036a05f2fc",
+            "colId": "91a3f7d2-0edf-46c4-b251-d1ba751be39a",
+            "containerId": "a9e2a276-b7bc-434f-908d-dfda0e91eb63",
+            "name": "searchService",
+            "url": "/service/search/662c07fc09ffd1e4cd7e543b",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-04-26T19:50:33.846Z",
+            "modified": "2024-04-26T21:48:10.359Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ad70c2b9-05c6-43d2-9d19-04c0d75cdc0c",
+            "colId": "91a3f7d2-0edf-46c4-b251-d1ba751be39a",
+            "containerId": "d89616ce-4b79-466b-8035-148e1449578a",
+            "name": "changeRol",
+            "url": "/user/changerol/662c0db6be416a71dc98b562",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-04-26T20:24:40.771Z",
+            "modified": "2024-04-26T21:44:36.917Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "rol",
+                        "value": "CLIENT"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "02508501-60ce-4102-af91-b29f33d7b698",
+            "colId": "91a3f7d2-0edf-46c4-b251-d1ba751be39a",
+            "containerId": "a9e2a276-b7bc-434f-908d-dfda0e91eb63",
+            "name": "getHotels",
+            "url": "/service/gethotel/662c289e0be9cb30fa8a3a71",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-04-26T21:57:40.818Z",
+            "modified": "2024-04-26T22:20:25.676Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    }
+}
