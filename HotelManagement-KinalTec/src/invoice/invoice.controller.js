@@ -15,8 +15,8 @@ export const addInvoice = async(req, res)=>{
        //Getting the data
        let data = req.body
        let {_id} =req.user
-        //Setting the client
-        data.user = _id
+         //Setting the client
+        data.user = _id 
         // Searching some models to get information
          let reservation = await Reservation.findOne({_id: data.reservation})
          let event = await Event.findOne({_id: data.Event})

@@ -1,77 +1,77 @@
 {
     "client": "Thunder Client",
     "collectionName": "HotelManagement",
-    "dateExported": "2024-04-16T06:32:41.217Z",
+    "dateExported": "2024-04-26T23:25:50.645Z",
     "version": "1.1",
     "folders": [
         {
-            "_id": "6208c760-e208-48a6-af62-64c3ba8aae18",
+            "_id": "bba4b509-96ba-465f-958f-02f09f7a7cc6",
             "name": "service",
             "containerId": "",
-            "created": "2024-04-12T17:11:23.422Z",
+            "created": "2024-04-26T19:25:07.187Z",
             "sortNum": 10000
         },
         {
-            "_id": "39a0647b-fa7d-4356-b94b-8a32e5f5d105",
+            "_id": "7afedb89-372b-4796-b8c6-633ca0603e7d",
             "name": "hotel",
             "containerId": "",
-            "created": "2024-04-12T17:17:52.566Z",
+            "created": "2024-04-26T19:25:07.188Z",
             "sortNum": 20000
         },
         {
-            "_id": "cabe5c57-c625-4b1c-bba2-5a075dbef4f2",
+            "_id": "9ad78534-bddf-452a-88ab-97e3d3cf25a1",
             "name": "user",
             "containerId": "",
-            "created": "2024-04-12T17:22:58.133Z",
+            "created": "2024-04-26T19:25:07.189Z",
             "sortNum": 30000
         },
         {
-            "_id": "f3eb5ba9-3f57-4f53-a0e8-f71b79f98318",
+            "_id": "ddd35f1c-e35c-4f80-bdda-a896e3224537",
             "name": "room",
             "containerId": "",
-            "created": "2024-04-12T17:44:52.068Z",
+            "created": "2024-04-26T19:25:07.190Z",
             "sortNum": 40000
         },
         {
-            "_id": "30f01a9e-15bd-4289-a433-4194eaca028e",
+            "_id": "c2ff7eb1-9da3-4630-9b44-904dbf5548aa",
             "name": "event",
             "containerId": "",
-            "created": "2024-04-12T17:45:57.536Z",
+            "created": "2024-04-26T19:25:07.191Z",
             "sortNum": 60000
         },
         {
-            "_id": "70d63679-f665-44cd-b5b7-11776c935b26",
+            "_id": "845cad11-40ef-4817-b2f8-95bf5b637add",
             "name": "reservation",
             "containerId": "",
-            "created": "2024-04-12T17:46:05.664Z",
+            "created": "2024-04-26T19:25:07.192Z",
             "sortNum": 70000
         },
         {
-            "_id": "2e9d6c2d-d766-4b6d-b8eb-c7c3376cb703",
+            "_id": "5401729c-7be4-4f43-a143-a6b0f3ebb943",
             "name": "invoice",
             "containerId": "",
-            "created": "2024-04-12T17:46:13.344Z",
+            "created": "2024-04-26T19:25:07.193Z",
             "sortNum": 80000
         },
         {
-            "_id": "1968fc4d-03d8-42ca-ae7e-24e101470239",
+            "_id": "1633e4a5-c253-4d9a-890c-f2637c62df43",
             "name": "category",
             "containerId": "",
-            "created": "2024-04-16T05:39:11.325Z",
+            "created": "2024-04-26T19:25:07.194Z",
             "sortNum": 90000
         }
     ],
     "requests": [
         {
-            "_id": "0f223da5-4fa1-4293-a25e-afabae575777",
-            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
-            "containerId": "6208c760-e208-48a6-af62-64c3ba8aae18",
+            "_id": "c648896c-f0b3-440f-8617-87426f35c0c5",
+            "colId": "b18555de-dbb1-4ad8-8c2d-5105c170c5a4",
+            "containerId": "bba4b509-96ba-465f-958f-02f09f7a7cc6",
             "name": "add",
             "url": "/service/save",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-04-12T17:11:43.718Z",
-            "modified": "2024-04-12T17:17:27.452Z",
+            "created": "2024-04-26T19:25:07.187Z",
+            "modified": "2024-04-26T19:25:07.187Z",
             "headers": [],
             "params": [],
             "body": {
@@ -91,16 +91,21 @@
             "tests": []
         },
         {
-            "_id": "fbf1e04f-6dfb-4bd4-a182-1cd9547affe5",
-            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
-            "containerId": "39a0647b-fa7d-4356-b94b-8a32e5f5d105",
+            "_id": "a9a0e89a-10f4-4bf5-841f-758ebbebc140",
+            "colId": "b18555de-dbb1-4ad8-8c2d-5105c170c5a4",
+            "containerId": "7afedb89-372b-4796-b8c6-633ca0603e7d",
             "name": "addHotel",
             "url": "/hotel/addHotel",
             "method": "POST",
             "sortNum": 20000,
-            "created": "2024-04-12T17:18:04.450Z",
-            "modified": "2024-04-16T04:39:48.042Z",
-            "headers": [],
+            "created": "2024-04-26T19:25:07.188Z",
+            "modified": "2024-04-26T19:58:30.729Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYxNDk0LCJleHAiOjE3MTQxNzIyOTR9.bBJs2jK8lYSkhd7nX5f5Xoosa6bZI_6WTauR2KIZIbk"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "formencoded",
@@ -144,93 +149,73 @@
             "tests": []
         },
         {
-            "_id": "66fa8b55-a5d9-47cf-bbdb-b0e0ffe33eac",
-            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
-            "containerId": "cabe5c57-c625-4b1c-bba2-5a075dbef4f2",
+            "_id": "9afa7346-e1f2-4332-a0bf-64d705c3f910",
+            "colId": "b18555de-dbb1-4ad8-8c2d-5105c170c5a4",
+            "containerId": "9ad78534-bddf-452a-88ab-97e3d3cf25a1",
             "name": "register",
             "url": "/user/register",
             "method": "POST",
             "sortNum": 30000,
-            "created": "2024-04-12T17:23:07.232Z",
-            "modified": "2024-04-12T17:27:15.810Z",
+            "created": "2024-04-26T19:25:07.189Z",
+            "modified": "2024-04-26T20:03:01.718Z",
             "headers": [],
             "params": [],
-            "body": {
-                "type": "formencoded",
-                "raw": "",
-                "form": [
-                    {
-                        "name": "name",
-                        "value": "Franco"
-                    },
-                    {
-                        "name": "surname",
-                        "value": "Paiz"
-                    },
-                    {
-                        "name": "email",
-                        "value": "fpaiz@gmail.com"
-                    },
-                    {
-                        "name": "username",
-                        "value": "fpaiz2"
-                    },
-                    {
-                        "name": "password",
-                        "value": "12345678"
-                    },
-                    {
-                        "name": "phone",
-                        "value": "12345678"
-                    },
-                    {
-                        "name": "rol",
-                        "value": "",
-                        "isDisabled": true
-                    }
-                ]
-            },
             "tests": []
         },
         {
-            "_id": "59954cf6-840c-475d-bb6b-4e1d1d6e3cd5",
-            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
-            "containerId": "39a0647b-fa7d-4356-b94b-8a32e5f5d105",
+            "_id": "493e0418-1026-4a27-b42a-45cfc3f17efd",
+            "colId": "b18555de-dbb1-4ad8-8c2d-5105c170c5a4",
+            "containerId": "7afedb89-372b-4796-b8c6-633ca0603e7d",
             "name": "getHotels",
             "url": "/hotel/getHotels",
             "method": "GET",
             "sortNum": 40000,
-            "created": "2024-04-16T05:33:19.028Z",
-            "modified": "2024-04-16T05:34:47.552Z",
-            "headers": [],
+            "created": "2024-04-26T19:25:07.190Z",
+            "modified": "2024-04-26T20:04:13.745Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYxODQzLCJleHAiOjE3MTQxNzI2NDN9.Mv9PupQk_7RkgoVA8DUn1qQrrn_r5u3KdK7FGdihX0c"
+                }
+            ],
             "params": [],
             "tests": []
         },
         {
-            "_id": "38c2f3fa-e048-429f-b8e4-d28aa8b52104",
-            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
-            "containerId": "39a0647b-fa7d-4356-b94b-8a32e5f5d105",
+            "_id": "16877528-5bdb-4a02-89e9-0687b5941cff",
+            "colId": "b18555de-dbb1-4ad8-8c2d-5105c170c5a4",
+            "containerId": "7afedb89-372b-4796-b8c6-633ca0603e7d",
             "name": "getHotel",
-            "url": "/hotel/getHotel/661e0114a94546ee4273c702",
+            "url": "/hotel/getHotel/662c07668491de6d8a2fe10e",
             "method": "GET",
             "sortNum": 50000,
-            "created": "2024-04-16T05:33:25.414Z",
-            "modified": "2024-04-16T05:35:09.053Z",
-            "headers": [],
+            "created": "2024-04-26T19:25:07.191Z",
+            "modified": "2024-04-26T20:04:42.971Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYxODQzLCJleHAiOjE3MTQxNzI2NDN9.Mv9PupQk_7RkgoVA8DUn1qQrrn_r5u3KdK7FGdihX0c"
+                }
+            ],
             "params": [],
             "tests": []
         },
         {
-            "_id": "f5c23003-e705-4380-8906-c1472498d7e7",
-            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
-            "containerId": "39a0647b-fa7d-4356-b94b-8a32e5f5d105",
+            "_id": "92913c8a-0299-4372-aaa8-1249838d075f",
+            "colId": "b18555de-dbb1-4ad8-8c2d-5105c170c5a4",
+            "containerId": "7afedb89-372b-4796-b8c6-633ca0603e7d",
             "name": "updateHotel",
-            "url": "/hotel/updateHotel/661e0114a94546ee4273c702",
+            "url": "/hotel/updateHotel/662c07668491de6d8a2fe10e",
             "method": "PUT",
             "sortNum": 60000,
-            "created": "2024-04-16T05:33:34.734Z",
-            "modified": "2024-04-16T05:38:24.526Z",
-            "headers": [],
+            "created": "2024-04-26T19:25:07.192Z",
+            "modified": "2024-04-26T20:05:54.190Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYxODQzLCJleHAiOjE3MTQxNzI2NDN9.Mv9PupQk_7RkgoVA8DUn1qQrrn_r5u3KdK7FGdihX0c"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "formencoded",
@@ -249,30 +234,40 @@
             "tests": []
         },
         {
-            "_id": "39b637da-68cf-4c00-bfaf-f6f33a490f74",
-            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
-            "containerId": "39a0647b-fa7d-4356-b94b-8a32e5f5d105",
+            "_id": "87c1b0f9-baa6-4321-953a-e7d13933a3b2",
+            "colId": "b18555de-dbb1-4ad8-8c2d-5105c170c5a4",
+            "containerId": "7afedb89-372b-4796-b8c6-633ca0603e7d",
             "name": "deleteHotel",
-            "url": "/hotel/deleteHotel/6619c75bee1a3bdef8a711fd",
+            "url": "/hotel/deleteHotel/662c07668491de6d8a2fe10e",
             "method": "DELETE",
             "sortNum": 70000,
-            "created": "2024-04-16T05:33:41.278Z",
-            "modified": "2024-04-16T05:38:44.490Z",
-            "headers": [],
+            "created": "2024-04-26T19:25:07.193Z",
+            "modified": "2024-04-26T20:06:46.760Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYxODQzLCJleHAiOjE3MTQxNzI2NDN9.Mv9PupQk_7RkgoVA8DUn1qQrrn_r5u3KdK7FGdihX0c"
+                }
+            ],
             "params": [],
             "tests": []
         },
         {
-            "_id": "720464c9-962e-415f-9529-f3f0e3dfbbe6",
-            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
-            "containerId": "1968fc4d-03d8-42ca-ae7e-24e101470239",
+            "_id": "db0b5e86-5afb-47cd-83f7-0a6b4610d105",
+            "colId": "b18555de-dbb1-4ad8-8c2d-5105c170c5a4",
+            "containerId": "1633e4a5-c253-4d9a-890c-f2637c62df43",
             "name": "addCategory",
             "url": "/category/addCategory",
             "method": "POST",
             "sortNum": 90000,
-            "created": "2024-04-16T05:39:21.940Z",
-            "modified": "2024-04-16T06:19:33.890Z",
-            "headers": [],
+            "created": "2024-04-26T19:25:07.194Z",
+            "modified": "2024-04-26T20:24:41.103Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYzMDY2LCJleHAiOjE3MTQxNzM4NjZ9.ZMBs74936uCYWpa8NIuF3wCdP2uuTy7QduNNGPWPabg"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "formencoded",
@@ -280,55 +275,70 @@
                 "form": [
                     {
                         "name": "name",
-                        "value": "Boutique"
+                        "value": "Resort"
                     },
                     {
                         "name": "description",
-                        "value": "Establecimientos pequeños y exclusivos, generalmente con un enfoque en diseño, servicio personalizado y experiencias únicas para los huéspedes."
+                        "value": "Establecimiento grande."
                     }
                 ]
             },
             "tests": []
         },
         {
-            "_id": "24bb8883-e618-4d6c-bf0d-d9ef5b718642",
-            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
-            "containerId": "1968fc4d-03d8-42ca-ae7e-24e101470239",
+            "_id": "9971ebd5-b3db-498e-9cc1-6d24ddef2d61",
+            "colId": "b18555de-dbb1-4ad8-8c2d-5105c170c5a4",
+            "containerId": "1633e4a5-c253-4d9a-890c-f2637c62df43",
             "name": "getCategories",
             "url": "/category/getCategories",
             "method": "GET",
             "sortNum": 100000,
-            "created": "2024-04-16T05:39:53.787Z",
-            "modified": "2024-04-16T06:19:09.188Z",
-            "headers": [],
+            "created": "2024-04-26T19:25:07.195Z",
+            "modified": "2024-04-26T20:29:49.652Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYzMDY2LCJleHAiOjE3MTQxNzM4NjZ9.ZMBs74936uCYWpa8NIuF3wCdP2uuTy7QduNNGPWPabg"
+                }
+            ],
             "params": [],
             "tests": []
         },
         {
-            "_id": "16c0c7a6-e990-443b-a10b-d456331f0bb5",
-            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
-            "containerId": "1968fc4d-03d8-42ca-ae7e-24e101470239",
+            "_id": "77261ad0-bbe9-4c57-9c2c-b770f18144ad",
+            "colId": "b18555de-dbb1-4ad8-8c2d-5105c170c5a4",
+            "containerId": "1633e4a5-c253-4d9a-890c-f2637c62df43",
             "name": "getCategory",
-            "url": "/category/getCategory/661e1875d218cea49fd0dde5",
+            "url": "/category/getCategory/662c0e9daecf15fb4e5388b9",
             "method": "GET",
             "sortNum": 110000,
-            "created": "2024-04-16T05:40:03.691Z",
-            "modified": "2024-04-16T06:22:12.915Z",
-            "headers": [],
+            "created": "2024-04-26T19:25:07.196Z",
+            "modified": "2024-04-26T20:30:10.090Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYzMDY2LCJleHAiOjE3MTQxNzM4NjZ9.ZMBs74936uCYWpa8NIuF3wCdP2uuTy7QduNNGPWPabg"
+                }
+            ],
             "params": [],
             "tests": []
         },
         {
-            "_id": "f1233808-318a-4c6c-bb7b-57452010ec1c",
-            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
-            "containerId": "1968fc4d-03d8-42ca-ae7e-24e101470239",
+            "_id": "b364fa5f-5d4a-41d3-adc8-d5ff82fe7327",
+            "colId": "b18555de-dbb1-4ad8-8c2d-5105c170c5a4",
+            "containerId": "1633e4a5-c253-4d9a-890c-f2637c62df43",
             "name": "updateCategory",
-            "url": "/category/updateCategory/661e1835d218cea49fd0dde2",
+            "url": "/category/updateCategory/662c0e9daecf15fb4e5388b9",
             "method": "PUT",
             "sortNum": 120000,
-            "created": "2024-04-16T05:40:11.604Z",
-            "modified": "2024-04-16T06:23:25.457Z",
-            "headers": [],
+            "created": "2024-04-26T19:25:07.197Z",
+            "modified": "2024-04-26T21:44:06.054Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
             "params": [],
             "body": {
                 "type": "formencoded",
@@ -343,16 +353,63 @@
             "tests": []
         },
         {
-            "_id": "a7791b6f-05d1-471a-aefb-92324701b15f",
-            "colId": "d6573a34-948b-4855-9687-d977e0b6bcee",
-            "containerId": "1968fc4d-03d8-42ca-ae7e-24e101470239",
+            "_id": "0ac5bd10-32e0-4a5f-8eaf-bf2d66c60339",
+            "colId": "b18555de-dbb1-4ad8-8c2d-5105c170c5a4",
+            "containerId": "1633e4a5-c253-4d9a-890c-f2637c62df43",
             "name": "deleteCategory",
             "url": "/category/deleteCategory/661e1b5dac94aec91438cc6d",
             "method": "DELETE",
             "sortNum": 130000,
-            "created": "2024-04-16T05:40:19.875Z",
-            "modified": "2024-04-16T06:32:22.345Z",
+            "created": "2024-04-26T19:25:07.198Z",
+            "modified": "2024-04-26T19:25:07.198Z",
             "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d5ad9945-eb5f-4b12-ae3a-496969f50f1e",
+            "colId": "b18555de-dbb1-4ad8-8c2d-5105c170c5a4",
+            "containerId": "9ad78534-bddf-452a-88ab-97e3d3cf25a1",
+            "name": "login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2024-04-26T19:50:05.235Z",
+            "modified": "2024-04-26T19:51:54.265Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "fpaiz"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b4458694-16d1-424f-acbf-cbaf2ed92ced",
+            "colId": "b18555de-dbb1-4ad8-8c2d-5105c170c5a4",
+            "containerId": "5401729c-7be4-4f43-a143-a6b0f3ebb943",
+            "name": "addInvoice",
+            "url": "/invoice/addInvoice",
+            "method": "POST",
+            "sortNum": 150000,
+            "created": "2024-04-26T23:05:31.056Z",
+            "modified": "2024-04-26T23:16:01.245Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTczMzQ3LCJleHAiOjE3MTQxODQxNDd9.nmcrmBZfKYFBdnpxjAr00D4M9M650lHLIZ4KEXWeIuE"
+                }
+            ],
             "params": [],
             "tests": []
         }

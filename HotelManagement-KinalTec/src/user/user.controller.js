@@ -12,7 +12,7 @@ export const registerU = async (req, res) => {
     try {
         let data = req.body
         data.password = await encrypt(data.password)
-        data.role = 'CLIENT'
+        data.rol = 'CLIENT'
         let user = await User(data)
         await user.save()
         return res.status(200).send({message: 'User registered successfully.'})

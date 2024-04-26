@@ -47,8 +47,8 @@ export const updateCategory = async(req, res)=>{
     try {
             let {id} = req.params
             let data = req.body
-            let upadate = checkUpdate(data, id)
-            if(!upadate){
+            let update = checkUpdate(data, id)
+            if(!update){
                 return res.status(404).send({ message: 'Have submitted some data that cannot be update or missing.' })
             }
             let updatedCategory = await Category.updateOne(
