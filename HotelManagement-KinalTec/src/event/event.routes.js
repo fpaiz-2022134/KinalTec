@@ -6,7 +6,9 @@ import {
     saveEvent,
     test,
     updateEvent,
-    changeStatus
+    changeStatus,
+    searchEvent,
+    getEvent
 } from './event.controller.js'
 
 import {
@@ -19,6 +21,8 @@ const api = Router()
 api.post('/saveEvent', saveEvent,)
 api.put('/updateEvent/:id', [validateJwt, isAdmin], updateEvent)
 api.put('/changeStatus/:id', [validateJwt, isAdmin], changeStatus)
+api.post('/search/:id', [validateJwt], searchEvent)
+api.get('/getEvent', [validateJwt, isAdmin], getEvent)
 
 api.get('/test', test)
 

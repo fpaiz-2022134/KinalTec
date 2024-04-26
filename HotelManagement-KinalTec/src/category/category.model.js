@@ -1,6 +1,8 @@
-import mongoose from 'mongoose'
+'use strict'
 
-const serviceSchema = mongoose.Schema({
+import { Schema, model } from "mongoose"
+
+const categorySchema = Schema({
     name: {
         type: String,
         required: true
@@ -11,4 +13,4 @@ const serviceSchema = mongoose.Schema({
     }
 })
 
-export default mongoose.model('service', serviceSchema)
+export default model('category', categorySchema)

@@ -1,7 +1,5 @@
 'use strict'
 
-import User from '../user/user.model.js'
-//import Hotel from '../hotel/hotel.model.js'
 import Event from '../event/event.model.js'
 import { checkUpdate } from '../utils/validator.js'
 
@@ -32,7 +30,7 @@ export const updateEvent = async (req, res) => {
             { _id: id },
             data,
             { new: true }
-        ).populate('user', [])
+        ).populate('user', 'hotel', 'service', [])
         if (!updatedEvent) return res.status(404).send({ message: 'Event not found, not updated.' })
         return res.send({ message: 'Event updated succesfully.', updatedEvent })
     } catch (err) {
@@ -64,6 +62,24 @@ export const changeStatus = async (req, res) => {
     }
 }
 
-export const search = async (req, res) => {
+export const searchEvent = async (req, res) => {
+    try {
+        let { id } = req.params
+        let events = await Event.findOne({ _id: id }).populate('user', [])
+        if (!events) return res.status(404).send({ message: 'Event not found.' })
+        return res.status(200).send({ message: 'Event found', events })
+    } catch (err) {
+        console.error(err)
+        return res.status(500).send({ message: 'Error searching event', err })
+    }
+}
 
+export const getEvent = async (req, res) => {
+    try {
+        let events = await Event.find()
+        return res.send({ events })
+    } catch (err) {
+        console.error(err)
+        return res.status(500).send({ message: 'Error getting event.' })
+    }
 }
