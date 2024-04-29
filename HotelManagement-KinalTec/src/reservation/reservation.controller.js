@@ -6,6 +6,7 @@ import Reservation from './reservation.model.js'
 export const addReservation = async(req, res)=>{
     try {
         let data = req.body
+        data.status = true
         let reservation = new Reservation(data)
         await reservation.save()
         return res.status(200).send({message: 'Reservation registered successfully.'})

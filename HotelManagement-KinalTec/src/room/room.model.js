@@ -26,14 +26,13 @@ const roomSchema = Schema({
         enum: ['DISPONIBLE', 'NO DISPONIBLE', 'EN MANTENIMIENTO'],
         required: true
     }, 
-    /*
+    
     hotelid:{
         type: Schema.ObjectId,
         ref: 'hotel',
         required: true
         
     }
-*/},{
 })
 
 export default model('room', roomSchema)
