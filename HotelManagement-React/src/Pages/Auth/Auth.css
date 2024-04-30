@@ -1,0 +1,110 @@
+/* Restablecemos el fondo del body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Establecemos el fondo solo para el contenedor auth */
+.auth-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/img/fondo.png');
+    background-size: cover; /* Para cubrir todo el contenedor */
+    background-position: center; /* Centramos la imagen */
+}
+
+/* Resto de estilos permanecen igual */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 0 auto; /* Centramos horizontalmente */
+    border-radius: 8px;
+    background-color: #f8f9fa; /* Background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center; /* Centramos el texto */
+}
+
+.auth-form input,
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.auth-form input {
+    background-color: #fff; /* White input background */
+    border: 1px solid #ced4da; /* Light border */
+}
+
+.auth-form button {
+    cursor: pointer;
+    background-color: #007bff; /* Primary color */
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.auth-form button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.auth-form button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.auth-form-logo-container {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Dark color for logo */
+}
+
+.auth-form-switch-label {
+    color: #007bff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-top: 10px;
+    text-align: center; /* Centramos el texto */
+}
+
+.auth-form-switch-label:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+.auth-form-validation-message {
+    color: #dc3545; /* Error message color */
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* Specific Styles for Login and Register Containers */
+.login-container,
+.register-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /* Centramos horizontalmente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #fff; /* White background */
+    text-align: center;
+}
+
+.register-container {
+    height: auto; /* Automatically adjust height */
+    min-height: 400px; /* Minimum height */
+}
