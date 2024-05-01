@@ -1,6 +1,6 @@
 'use strict'
 
-import { Schema, model} from 'mongoose'
+import { Schema, model } from 'mongoose'
 
 const eventSchema = Schema({
     name: {
@@ -37,11 +37,13 @@ const eventSchema = Schema({
         ref: 'hotel',
         required: true
     },
-    service: {
-        type: Schema.ObjectId,
-        ref: 'service',
-        required: true
-    }
- }) 
+    service: [
+        {
+            type: Schema.ObjectId,
+            ref: 'service',
+            required: false
+        }
+    ]
+})
 
 export default model('event', eventSchema)
