@@ -1,0 +1,1108 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "HotelManagement",
+    "collectionId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+    "dateExported": "2024-05-02T06:51:31.631Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "3ff1e529-0fae-46ba-bce8-bf4ac5a33d17",
+            "name": "service",
+            "containerId": "",
+            "created": "2024-04-29T03:05:26.994Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "957b4356-c8c8-4ef9-85ca-fba305bf493b",
+            "name": "hotel",
+            "containerId": "",
+            "created": "2024-04-29T03:05:26.995Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "b4b1ae97-a95f-47d7-a13b-4f8c22bdf007",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-04-29T03:05:26.996Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "4d6f678f-b63f-4fd6-ac5d-bef862e3d5ea",
+            "name": "room",
+            "containerId": "",
+            "created": "2024-04-29T03:05:26.997Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "d3452b91-c529-4299-9f46-18fef7d6a6bd",
+            "name": "event",
+            "containerId": "",
+            "created": "2024-04-29T03:05:26.998Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "786dbeb3-a7e0-44c5-a4d8-103f83613d65",
+            "name": "reservation",
+            "containerId": "",
+            "created": "2024-04-29T03:05:26.999Z",
+            "sortNum": 70000
+        },
+        {
+            "_id": "924fa19f-e9df-4187-bc98-86d7d83965e3",
+            "name": "invoice",
+            "containerId": "",
+            "created": "2024-04-29T03:05:27.000Z",
+            "sortNum": 80000
+        },
+        {
+            "_id": "64681b7d-7a88-4dd7-a87c-5601552bb044",
+            "name": "category",
+            "containerId": "",
+            "created": "2024-04-29T03:05:27.001Z",
+            "sortNum": 90000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "db20afe4-d9cf-4e6c-a77c-6b424d0d5f6a",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "3ff1e529-0fae-46ba-bce8-bf4ac5a33d17",
+            "name": "add",
+            "url": "/service/save",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-29T03:05:26.994Z",
+            "modified": "2024-05-02T05:08:29.607Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyNjM0MiwiZXhwIjoxNzE0NjM3MTQyfQ.arTOGIObKf76eGYKGCRVtEek-fxESSiiw7QtvMnXNGY"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Room service"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Atención al cuarto."
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "61e4a6e8-24d2-4131-8735-1f101470df4c",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "957b4356-c8c8-4ef9-85ca-fba305bf493b",
+            "name": "addHotel",
+            "url": "/hotel/addHotel",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-29T03:05:26.995Z",
+            "modified": "2024-04-29T03:05:26.995Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYxNDk0LCJleHAiOjE3MTQxNzIyOTR9.bBJs2jK8lYSkhd7nX5f5Xoosa6bZI_6WTauR2KIZIbk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Hotel Barcelo"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Hotel delujo posicionado entre los mejores del país."
+                    },
+                    {
+                        "name": "address",
+                        "value": "Zona 1, Guatemala."
+                    },
+                    {
+                        "name": "phone",
+                        "value": "22334455"
+                    },
+                    {
+                        "name": "email",
+                        "value": "hotelbarcelo3@gmail.com"
+                    },
+                    {
+                        "name": "assessment",
+                        "value": "7.5 (Bueno)"
+                    },
+                    {
+                        "name": "service",
+                        "value": "66196ca7278160a307adb3d8"
+                    },
+                    {
+                        "name": "service",
+                        "value": "66196ca7278160a307adb3d8",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "09ff4218-f54f-483a-8117-d1ca74f90add",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "b4b1ae97-a95f-47d7-a13b-4f8c22bdf007",
+            "name": "register",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-04-29T03:05:26.996Z",
+            "modified": "2024-05-02T05:37:08.668Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Julian"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Gonzalez"
+                    },
+                    {
+                        "name": "username",
+                        "value": "jgonzalez"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "jgonzalez@gmail.com"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "c831c393-e9e7-4eb3-af31-457685281418",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "957b4356-c8c8-4ef9-85ca-fba305bf493b",
+            "name": "getHotels",
+            "url": "/hotel/getHotels",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-04-29T03:05:26.997Z",
+            "modified": "2024-04-29T03:05:26.997Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYxODQzLCJleHAiOjE3MTQxNzI2NDN9.Mv9PupQk_7RkgoVA8DUn1qQrrn_r5u3KdK7FGdihX0c"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "44751d51-433a-4af4-b9eb-c472222b829f",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "957b4356-c8c8-4ef9-85ca-fba305bf493b",
+            "name": "getHotel",
+            "url": "/hotel/getHotel/662c07668491de6d8a2fe10e",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-04-29T03:05:26.998Z",
+            "modified": "2024-04-29T03:05:26.998Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYxODQzLCJleHAiOjE3MTQxNzI2NDN9.Mv9PupQk_7RkgoVA8DUn1qQrrn_r5u3KdK7FGdihX0c"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dce198ee-f5ae-48c1-bffa-5d1eea50f67b",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "957b4356-c8c8-4ef9-85ca-fba305bf493b",
+            "name": "updateHotel",
+            "url": "/hotel/updateHotel/662c07668491de6d8a2fe10e",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-04-29T03:05:26.999Z",
+            "modified": "2024-04-29T03:05:26.999Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYxODQzLCJleHAiOjE3MTQxNzI2NDN9.Mv9PupQk_7RkgoVA8DUn1qQrrn_r5u3KdK7FGdihX0c"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Hotel California"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "23435665"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "09dec6ae-1eb0-4327-8d75-65e2b121c77b",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "957b4356-c8c8-4ef9-85ca-fba305bf493b",
+            "name": "deleteHotel",
+            "url": "/hotel/deleteHotel/662c07668491de6d8a2fe10e",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-04-29T03:05:27.000Z",
+            "modified": "2024-04-29T03:05:27.000Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYxODQzLCJleHAiOjE3MTQxNzI2NDN9.Mv9PupQk_7RkgoVA8DUn1qQrrn_r5u3KdK7FGdihX0c"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9cfafb49-4cc7-44b8-be37-5744cf32aa46",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "64681b7d-7a88-4dd7-a87c-5601552bb044",
+            "name": "addCategory",
+            "url": "/category/addCategory",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-04-29T03:05:27.001Z",
+            "modified": "2024-04-29T03:05:27.001Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYzMDY2LCJleHAiOjE3MTQxNzM4NjZ9.ZMBs74936uCYWpa8NIuF3wCdP2uuTy7QduNNGPWPabg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Resort"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Establecimiento grande."
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "50ef5b4b-5872-414d-8544-0292cdc78b99",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "64681b7d-7a88-4dd7-a87c-5601552bb044",
+            "name": "getCategories",
+            "url": "/category/getCategories",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-04-29T03:05:27.003Z",
+            "modified": "2024-04-29T03:05:27.003Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYzMDY2LCJleHAiOjE3MTQxNzM4NjZ9.ZMBs74936uCYWpa8NIuF3wCdP2uuTy7QduNNGPWPabg"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "08271358-574c-471c-ba39-74d426f06076",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "64681b7d-7a88-4dd7-a87c-5601552bb044",
+            "name": "getCategory",
+            "url": "/category/getCategory/662c0e9daecf15fb4e5388b9",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-04-29T03:05:27.004Z",
+            "modified": "2024-04-29T03:05:27.004Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYzMDY2LCJleHAiOjE3MTQxNzM4NjZ9.ZMBs74936uCYWpa8NIuF3wCdP2uuTy7QduNNGPWPabg"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d230a770-898c-4535-9c39-ac0659223ba5",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "64681b7d-7a88-4dd7-a87c-5601552bb044",
+            "name": "updateCategory",
+            "url": "/category/updateCategory/662c0e9daecf15fb4e5388b9",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-04-29T03:05:27.005Z",
+            "modified": "2024-04-29T03:05:27.005Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Hotel Resort"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "869ac577-280e-451e-8aa8-7fd9ffc2b59c",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "64681b7d-7a88-4dd7-a87c-5601552bb044",
+            "name": "deleteCategory",
+            "url": "/category/deleteCategory/661e1b5dac94aec91438cc6d",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-04-29T03:05:27.006Z",
+            "modified": "2024-04-29T03:05:27.006Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e782ddae-6b8b-43bd-a23a-a21711fd3091",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "b4b1ae97-a95f-47d7-a13b-4f8c22bdf007",
+            "name": "login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2024-04-29T03:05:27.007Z",
+            "modified": "2024-05-02T06:36:55.600Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "fpaiz2"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "c330a20b-0f5b-45f1-9269-fe3179780d8f",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "924fa19f-e9df-4187-bc98-86d7d83965e3",
+            "name": "addInvoice",
+            "url": "/invoice/addInvoice",
+            "method": "POST",
+            "sortNum": 150000,
+            "created": "2024-04-29T03:05:27.008Z",
+            "modified": "2024-04-29T03:57:37.839Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDM2MzA0MSwiZXhwIjoxNzE0MzczODQxfQ.rSX92bfH11_dWx1buyiaoxW0YpUlUUYN3fOKJgxa4ZU"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nit",
+                        "value": "234567-33"
+                    },
+                    {
+                        "name": "paymentMethod",
+                        "value": "VISA"
+                    },
+                    {
+                        "name": "reservation",
+                        "value": "662f1714368835a947fcdcfa"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "0a31807a-9521-4985-9df4-0859dde5e3cb",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "786dbeb3-a7e0-44c5-a4d8-103f83613d65",
+            "name": "addReservation",
+            "url": "/reservation/addReservation",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2024-04-29T03:11:57.781Z",
+            "modified": "2024-04-29T03:42:12.542Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "description",
+                        "value": "Reservación de una noche"
+                    },
+                    {
+                        "name": "entryDate",
+                        "value": "2024-08-28"
+                    },
+                    {
+                        "name": "departureDate",
+                        "value": "2024-04-29"
+                    },
+                    {
+                        "name": "price",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "userId",
+                        "value": "662f16b9368835a947fcdcf6"
+                    },
+                    {
+                        "name": "roomId",
+                        "value": "662f119a5de16b6189664328"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "8088e2eb-1853-4184-99b0-73b8f732948b",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "d3452b91-c529-4299-9f46-18fef7d6a6bd",
+            "name": "updateEvent",
+            "url": "/event/updateEvent/66332cd07f8ef52a292cfc93",
+            "method": "PUT",
+            "sortNum": 160000,
+            "created": "2024-05-02T06:05:26.936Z",
+            "modified": "2024-05-02T06:07:28.667Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMDAzOSwiZXhwIjoxNzE0NjQwODM5fQ.j2Ac7fH-jJAS4uei8W150N79MWr2oj0pyS-ZPrcj6II"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "entryDate",
+                        "value": "2024-09-09"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "527f66de-6f86-4d05-8eb5-ff7ee8f6125f",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "4d6f678f-b63f-4fd6-ac5d-bef862e3d5ea",
+            "name": "addRoom",
+            "url": "/room/saveRoom",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2024-04-29T03:14:27.043Z",
+            "modified": "2024-05-02T06:49:44.008Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMTgxNywiZXhwIjoxNzE0NjQyNjE3fQ.rAw-w8rymdxk42PYUbJw_QwO2Wkz4_MGfSfd4UZpNuE"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "number",
+                        "value": "1"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Habitación con servicios incluidos, televisión y minibar"
+                    },
+                    {
+                        "name": "capacity",
+                        "value": "Una o dos personas"
+                    },
+                    {
+                        "name": "type",
+                        "value": "Habitación individual"
+                    },
+                    {
+                        "name": "price",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "status",
+                        "value": "DISPONIBLE"
+                    },
+                    {
+                        "name": "hotelid",
+                        "value": "661e0114a94546ee4273c702"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "bb81ea53-93b6-4a40-8edf-5650649551cc",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "b4b1ae97-a95f-47d7-a13b-4f8c22bdf007",
+            "name": "update",
+            "url": "/user/update/6618bc9b0b73b3d0f388f684",
+            "method": "PUT",
+            "sortNum": 180000,
+            "created": "2024-04-29T03:32:06.604Z",
+            "modified": "2024-04-29T03:36:10.250Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDM2MTc1NiwiZXhwIjoxNzE0MzcyNTU2fQ.smbbb92yCXl4v31AkRiWofG_LbP3ncgww3e_wUP4iJw"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "ed0237d2-7f9b-4ba8-9cd3-b45f432b9401",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "924fa19f-e9df-4187-bc98-86d7d83965e3",
+            "name": "updateInvoice",
+            "url": "/invoice/updateInvoice/662f1938bd57b2db470674ba",
+            "method": "PUT",
+            "sortNum": 190000,
+            "created": "2024-04-29T15:53:01.090Z",
+            "modified": "2024-04-29T15:54:04.953Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDQwNTk2NSwiZXhwIjoxNzE0NDE2NzY1fQ._wjx44S_k_PwkCUt7cnWCFglXdoTlLoNgz5AahA0wdM"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "paymentMethod",
+                        "value": "MASTERCARD"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "7683f56f-568b-49d7-a341-cea9b9ca56e2",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "924fa19f-e9df-4187-bc98-86d7d83965e3",
+            "name": "getMyInvoices",
+            "url": "/invoice/getMyInvoices",
+            "method": "GET",
+            "sortNum": 200000,
+            "created": "2024-04-30T15:50:36.086Z",
+            "modified": "2024-04-30T15:52:49.031Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJmMTZiOTM2ODgzNWE5NDdmY2RjZjYiLCJ1c2VybmFtZSI6ImFnb256YWxleiIsIm5hbWUiOiJBbGVqYW5kcm8iLCJyb2wiOiJDTElFTlQiLCJpYXQiOjE3MTQ0OTIzNTYsImV4cCI6MTcxNDUwMzE1Nn0.kuDkjBXXsm2YhL2KB5ncnGcVe1F0Z1uq9Z1BATjdhUU"
+                }
+            ]
+        },
+        {
+            "_id": "2a828fb3-8f11-4183-933c-6edbf00a0302",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "924fa19f-e9df-4187-bc98-86d7d83965e3",
+            "name": "getInvoices",
+            "url": "/invoice/getInvoices",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2024-04-30T15:54:01.529Z",
+            "modified": "2024-04-30T15:54:24.695Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDQ5MjQzMCwiZXhwIjoxNzE0NTAzMjMwfQ.2bvwmtU7ho-wd8Oi2juyHEDgF1PfiPI2hbQS3ynIFvI"
+                }
+            ]
+        },
+        {
+            "_id": "7b4b48b8-4526-4124-878b-02b60ad550e8",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "924fa19f-e9df-4187-bc98-86d7d83965e3",
+            "name": "searchInvoice",
+            "url": "/invoice/searchInvoice/662f1938bd57b2db470674ba",
+            "method": "GET",
+            "sortNum": 220000,
+            "created": "2024-04-30T15:54:39.564Z",
+            "modified": "2024-04-30T15:55:37.287Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDQ5MjQzMCwiZXhwIjoxNzE0NTAzMjMwfQ.2bvwmtU7ho-wd8Oi2juyHEDgF1PfiPI2hbQS3ynIFvI"
+                }
+            ]
+        },
+        {
+            "_id": "97cd58c3-7aad-4e16-b3fe-88b6d2e26455",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "3ff1e529-0fae-46ba-bce8-bf4ac5a33d17",
+            "name": "updateService",
+            "url": "/service/update/66196ca7278160a307adb3d8",
+            "method": "PUT",
+            "sortNum": 230000,
+            "created": "2024-05-02T05:05:17.889Z",
+            "modified": "2024-05-02T05:06:22.268Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyNjM0MiwiZXhwIjoxNzE0NjM3MTQyfQ.arTOGIObKf76eGYKGCRVtEek-fxESSiiw7QtvMnXNGY"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Piscina Olímpica"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "76f5f24e-3d88-4f07-b6a6-d41563d3da60",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "3ff1e529-0fae-46ba-bce8-bf4ac5a33d17",
+            "name": "deleteService",
+            "url": "/service/delete/66196ca7278160a307adb3d8",
+            "method": "DELETE",
+            "sortNum": 240000,
+            "created": "2024-05-02T05:06:47.266Z",
+            "modified": "2024-05-02T05:07:25.596Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyNjM0MiwiZXhwIjoxNzE0NjM3MTQyfQ.arTOGIObKf76eGYKGCRVtEek-fxESSiiw7QtvMnXNGY"
+                }
+            ]
+        },
+        {
+            "_id": "47d976b5-b126-4250-b25e-b5c00ee9810a",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "d3452b91-c529-4299-9f46-18fef7d6a6bd",
+            "name": "changeStatus",
+            "url": "/event/changeStatus/66332cd07f8ef52a292cfc93",
+            "method": "PUT",
+            "sortNum": 240000,
+            "created": "2024-05-02T06:07:43.733Z",
+            "modified": "2024-05-02T06:08:30.183Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMDAzOSwiZXhwIjoxNzE0NjQwODM5fQ.j2Ac7fH-jJAS4uei8W150N79MWr2oj0pyS-ZPrcj6II"
+                }
+            ]
+        },
+        {
+            "_id": "938d9978-6cf0-4820-bc36-47b0796622af",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "3ff1e529-0fae-46ba-bce8-bf4ac5a33d17",
+            "name": "getService",
+            "url": "/service/get",
+            "method": "GET",
+            "sortNum": 250000,
+            "created": "2024-05-02T05:08:46.655Z",
+            "modified": "2024-05-02T05:09:56.037Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyNjM0MiwiZXhwIjoxNzE0NjM3MTQyfQ.arTOGIObKf76eGYKGCRVtEek-fxESSiiw7QtvMnXNGY"
+                }
+            ]
+        },
+        {
+            "_id": "c9c277a4-23cd-4070-95fe-f0e67f807526",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "3ff1e529-0fae-46ba-bce8-bf4ac5a33d17",
+            "name": "search",
+            "url": "/service/search/66331fce00041e50d999a667",
+            "method": "GET",
+            "sortNum": 260000,
+            "created": "2024-05-02T05:10:06.238Z",
+            "modified": "2024-05-02T05:10:31.868Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyNjM0MiwiZXhwIjoxNzE0NjM3MTQyfQ.arTOGIObKf76eGYKGCRVtEek-fxESSiiw7QtvMnXNGY"
+                }
+            ]
+        },
+        {
+            "_id": "70219a59-29a6-4a18-8ac0-c76f2dbfe3ea",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "3ff1e529-0fae-46ba-bce8-bf4ac5a33d17",
+            "name": "getServicesByHotel",
+            "url": "/service/gethotel/661e0114a94546ee4273c702",
+            "method": "GET",
+            "sortNum": 270000,
+            "created": "2024-05-02T05:14:41.892Z",
+            "modified": "2024-05-02T05:15:45.486Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyNjM0MiwiZXhwIjoxNzE0NjM3MTQyfQ.arTOGIObKf76eGYKGCRVtEek-fxESSiiw7QtvMnXNGY"
+                }
+            ]
+        },
+        {
+            "_id": "d56cda44-a3d3-4057-8304-7e784dd4241e",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "b4b1ae97-a95f-47d7-a13b-4f8c22bdf007",
+            "name": "changeRol",
+            "url": "/user/changerol/66332565e0629081434ec58e",
+            "method": "PUT",
+            "sortNum": 280000,
+            "created": "2024-05-02T05:31:03.427Z",
+            "modified": "2024-05-02T05:40:54.816Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyODM2NywiZXhwIjoxNzE0NjM5MTY3fQ.ukVeufCnWTjRRf5_KJnKMadaeHoQ7rK6lT4cHp2-sLQ"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "rol",
+                        "value": "ADMIN"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "62aa12ea-9f97-489e-bf14-5f9f7b719d78",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "b4b1ae97-a95f-47d7-a13b-4f8c22bdf007",
+            "name": "delete",
+            "url": "/user/delete/66332565e0629081434ec58e",
+            "method": "DELETE",
+            "sortNum": 290000,
+            "created": "2024-05-02T05:41:11.417Z",
+            "modified": "2024-05-02T05:41:46.187Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyODM2NywiZXhwIjoxNzE0NjM5MTY3fQ.ukVeufCnWTjRRf5_KJnKMadaeHoQ7rK6lT4cHp2-sLQ"
+                }
+            ]
+        },
+        {
+            "_id": "90901996-f1eb-4b17-81ac-164e55c8ed94",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "b4b1ae97-a95f-47d7-a13b-4f8c22bdf007",
+            "name": "get",
+            "url": "/user/get",
+            "method": "GET",
+            "sortNum": 300000,
+            "created": "2024-05-02T05:44:47.768Z",
+            "modified": "2024-05-02T05:45:04.214Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyODM2NywiZXhwIjoxNzE0NjM5MTY3fQ.ukVeufCnWTjRRf5_KJnKMadaeHoQ7rK6lT4cHp2-sLQ"
+                }
+            ]
+        },
+        {
+            "_id": "776e38b9-ebd4-4e36-a4e4-1a1dffe2b7cb",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "b4b1ae97-a95f-47d7-a13b-4f8c22bdf007",
+            "name": "search",
+            "url": "/user/search/66197282044facc83724570d",
+            "method": "GET",
+            "sortNum": 310000,
+            "created": "2024-05-02T05:45:21.817Z",
+            "modified": "2024-05-02T05:45:53.073Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyODM2NywiZXhwIjoxNzE0NjM5MTY3fQ.ukVeufCnWTjRRf5_KJnKMadaeHoQ7rK6lT4cHp2-sLQ"
+                }
+            ]
+        },
+        {
+            "_id": "5e18fd0e-98b7-4684-b19f-068d192c45a0",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "d3452b91-c529-4299-9f46-18fef7d6a6bd",
+            "name": "saveEvent",
+            "url": "/event/saveEvent",
+            "method": "POST",
+            "sortNum": 320000,
+            "created": "2024-05-02T05:49:24.927Z",
+            "modified": "2024-05-02T06:02:04.891Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJmMTZiOTM2ODgzNWE5NDdmY2RjZjYiLCJ1c2VybmFtZSI6ImFnb256YWxleiIsIm5hbWUiOiJBbGVqYW5kcm8iLCJyb2wiOiJDTElFTlQiLCJpYXQiOjE3MTQ2Mjk0NjAsImV4cCI6MTcxNDY0MDI2MH0.WDXopxFFvB9E_wSeMDsK6KSIzPvlhcnbh2QgNmwQ2k4"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Boda"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Boda de mario y july"
+                    },
+                    {
+                        "name": "entryDate",
+                        "value": "2025-09-10"
+                    },
+                    {
+                        "name": "departureDate",
+                        "value": "2025-09-11"
+                    },
+                    {
+                        "name": "price",
+                        "value": "3000"
+                    },
+                    {
+                        "name": "user",
+                        "value": "662f16b9368835a947fcdcf6"
+                    },
+                    {
+                        "name": "hotel",
+                        "value": "661e0114a94546ee4273c702"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "6e762a36-7095-4eba-9c4a-ff4ff56bd6a8",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "d3452b91-c529-4299-9f46-18fef7d6a6bd",
+            "name": "search",
+            "url": "/event/search/66332cd07f8ef52a292cfc93",
+            "method": "GET",
+            "sortNum": 340000,
+            "created": "2024-05-02T06:08:56.589Z",
+            "modified": "2024-05-02T06:09:36.183Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMDAzOSwiZXhwIjoxNzE0NjQwODM5fQ.j2Ac7fH-jJAS4uei8W150N79MWr2oj0pyS-ZPrcj6II"
+                }
+            ]
+        },
+        {
+            "_id": "6efd6d8a-d6b3-46b7-99a5-5b01c17a2433",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "d3452b91-c529-4299-9f46-18fef7d6a6bd",
+            "name": "getEvents",
+            "url": "/event/getEvents",
+            "method": "GET",
+            "sortNum": 360000,
+            "created": "2024-05-02T06:11:29.278Z",
+            "modified": "2024-05-02T06:11:59.032Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMDAzOSwiZXhwIjoxNzE0NjQwODM5fQ.j2Ac7fH-jJAS4uei8W150N79MWr2oj0pyS-ZPrcj6II"
+                }
+            ]
+        },
+        {
+            "_id": "1b01b08e-e65c-4366-9a38-8d430136510f",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "786dbeb3-a7e0-44c5-a4d8-103f83613d65",
+            "name": "updateReservation",
+            "url": "/reservation/updateR/662f1714368835a947fcdcfa",
+            "method": "PUT",
+            "sortNum": 370000,
+            "created": "2024-05-02T06:21:09.908Z",
+            "modified": "2024-05-02T06:33:32.078Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJmMTZiOTM2ODgzNWE5NDdmY2RjZjYiLCJ1c2VybmFtZSI6ImFnb256YWxleiIsIm5hbWUiOiJBbGVqYW5kcm8iLCJyb2wiOiJDTElFTlQiLCJpYXQiOjE3MTQ2MzE2MDMsImV4cCI6MTcxNDY0MjQwM30.L-0bqs81UkhIpPRdVHvhCzOLnMbuuxJ1-05cHU3AaNg"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "description",
+                        "value": "Reservación de dos noches."
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "d9ca32ff-31c6-44d0-a6d2-9b0748553e27",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "786dbeb3-a7e0-44c5-a4d8-103f83613d65",
+            "name": "changeStatus",
+            "url": "/reservation/changeStatus/662f13c3965ccec9d538f9c8",
+            "method": "PUT",
+            "sortNum": 380000,
+            "created": "2024-05-02T06:34:51.606Z",
+            "modified": "2024-05-02T06:39:46.069Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMTgxNywiZXhwIjoxNzE0NjQyNjE3fQ.rAw-w8rymdxk42PYUbJw_QwO2Wkz4_MGfSfd4UZpNuE"
+                }
+            ]
+        },
+        {
+            "_id": "86998e08-9870-4090-befc-740a069093ef",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "786dbeb3-a7e0-44c5-a4d8-103f83613d65",
+            "name": "searchReservation",
+            "url": "/reservation/searchReservation/662f13c3965ccec9d538f9c8",
+            "method": "GET",
+            "sortNum": 390000,
+            "created": "2024-05-02T06:36:13.718Z",
+            "modified": "2024-05-02T06:37:25.724Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMTgxNywiZXhwIjoxNzE0NjQyNjE3fQ.rAw-w8rymdxk42PYUbJw_QwO2Wkz4_MGfSfd4UZpNuE"
+                }
+            ]
+        },
+        {
+            "_id": "ef1a55b2-d1ba-47b6-8af7-8df4ffa862b3",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "4d6f678f-b63f-4fd6-ac5d-bef862e3d5ea",
+            "name": "updateRoom",
+            "url": "/room/update/662f119a5de16b6189664328",
+            "method": "PUT",
+            "sortNum": 400000,
+            "created": "2024-05-02T06:41:24.454Z",
+            "modified": "2024-05-02T06:47:30.186Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMTgxNywiZXhwIjoxNzE0NjQyNjE3fQ.rAw-w8rymdxk42PYUbJw_QwO2Wkz4_MGfSfd4UZpNuE"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "capacity",
+                        "value": "5 personas."
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "47074dad-0056-4117-9b10-921d577d0ffe",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "4d6f678f-b63f-4fd6-ac5d-bef862e3d5ea",
+            "name": "deleteRoom",
+            "url": "/room/delete/662f119a5de16b6189664328",
+            "method": "DELETE",
+            "sortNum": 410000,
+            "created": "2024-05-02T06:41:31.214Z",
+            "modified": "2024-05-02T06:48:25.981Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMTgxNywiZXhwIjoxNzE0NjQyNjE3fQ.rAw-w8rymdxk42PYUbJw_QwO2Wkz4_MGfSfd4UZpNuE"
+                }
+            ]
+        },
+        {
+            "_id": "417dea86-5471-494b-8f18-770d014f6c3b",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "4d6f678f-b63f-4fd6-ac5d-bef862e3d5ea",
+            "name": "getRooms",
+            "url": "/room/getRooms",
+            "method": "GET",
+            "sortNum": 420000,
+            "created": "2024-05-02T06:49:00.230Z",
+            "modified": "2024-05-02T06:49:27.591Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMTgxNywiZXhwIjoxNzE0NjQyNjE3fQ.rAw-w8rymdxk42PYUbJw_QwO2Wkz4_MGfSfd4UZpNuE"
+                }
+            ]
+        },
+        {
+            "_id": "555c9261-f1e0-42e1-b4c0-e0e43124f88f",
+            "colId": "5853f4ff-2fe0-4074-a24f-29e58aee109d",
+            "containerId": "4d6f678f-b63f-4fd6-ac5d-bef862e3d5ea",
+            "name": "searchRoom",
+            "url": "/room/searchRoom/66333788c71a32459902872c",
+            "method": "GET",
+            "sortNum": 430000,
+            "created": "2024-05-02T06:49:59.123Z",
+            "modified": "2024-05-02T06:50:49.072Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMTgxNywiZXhwIjoxNzE0NjQyNjE3fQ.rAw-w8rymdxk42PYUbJw_QwO2Wkz4_MGfSfd4UZpNuE"
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    },
+    "ref": "udeEQqEaip641TEv0pNsCfogzO7xJfulu-owLl7HImnMJVbGW39cKuBHMXa-5c4DLuA5uqRnDrZlZCOShl3zBA"
+}
