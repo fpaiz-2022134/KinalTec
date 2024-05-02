@@ -22,7 +22,7 @@ const api = express.Router()
 api.post('/addInvoice', [validateJwt, isClient], addInvoice)
 api.get('/getMyInvoices', [validateJwt, isClient], getMyInvoices)
 api.get('/getInvoices', [validateJwt, isAdmin], getInvoices)
-api.get('/getInvoice', [validateJwt], searchInvoice)
+api.get('/searchInvoice/:id', [validateJwt], searchInvoice)
 api.put('/updateInvoice/:id', [validateJwt], updateInvoice)
 
 /* api.delete('/deleteInvoice', [validateJwt, isAdmin], deleteInvoice) */

@@ -55,3 +55,25 @@ export const deleteRoom = async(req, res)=>{
         return res.status(500).send({message: 'Error deleting'});
     }
 }
+
+export const getRooms = async(req, res) =>{
+    try {
+        let rooms = await Room.find()
+        if(!rooms) return res.status(404).send({ message: 'Rooms not found' })
+        return res.send({ message: 'Rooms found', rooms })
+    } catch (error) {
+        console.error(error)
+        return res.status(500).send({message: 'Error getting rooms'})
+    }
+}
+
+export const searchRoomById = async(req, res) =>{
+    try {
+        let { id } = req.params
+        let room = await Room.findById(id)
+        if(!room) return res.status(404).send({ message: 'Room not found' })
+        return res.send({ message: 'Room found', room })
+    } catch (error) {
+        console.error(error)
+    }
+}

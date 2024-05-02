@@ -20,7 +20,7 @@ export const updateReservation = async(req, res) =>{
     try {
         let {id} = req.params
         let data = req.body
-        let updateReservation = await Room.findOneAndUpdate(
+        let updateReservation = await Reservation.findOneAndUpdate(
             {_id: id},
             data,
             {new: true}
@@ -33,7 +33,36 @@ export const updateReservation = async(req, res) =>{
     }
 }
 
+export const changeStatus = async(req, res) =>{
+    try {
+        let {id} = req.params
+        let data = { status: false } // solo actualiza el campo status a false
+        let updateReservation = await Reservation.findOneAndUpdate(
+            {_id: id},
+            data,
+            {new: true}
+        )
+        if(!updateReservation)  return res.status(401).send({ message: 'Reservation not found and not updated' })
+        return res.send({ message: 'Updated Reservation', updateReservation })
+    } catch (error) {
+        console.error(error)
+        return res.status(500).send({ message: 'Error updating reservation' })
+    }
+}
+
 export const searchReservation = async(req, res) =>{
+    try {
+        let {id} = req.params
+        let reservation = await Reservation.findById(id)
+        if(!reservation) return res.status(404).send({ message: 'Reservation not found' })
+        return res.send({ message: 'Reservation found', reservation })
+    } catch (error) {
+        console.error(error)
+        return res.status(500).send({message: 'Error searching reservation'})
+    }
+}
+
+/* export const searchReservation = async(req, res) =>{
     try {
         let {search} = req.body
         let reservation = await Reservation.find({
@@ -47,7 +76,7 @@ export const searchReservation = async(req, res) =>{
         console.error(error)
         return res.status(500).send({message: 'Error searching reservation'})
     }
-}
+} */
 
 
 /* 

@@ -32,7 +32,7 @@ const hotelSchema = Schema({
     service: {
         type: [{
             type: Schema.Types.ObjectId,
-            ref: 'Service',
+            ref: 'service',
             required: true
         }]
     }
@@ -40,7 +40,7 @@ const hotelSchema = Schema({
     ,
     category: {
         type: Schema.Types.ObjectId,
-        ref: 'Category',
+        ref: 'category',
         required: true
     }
 })
