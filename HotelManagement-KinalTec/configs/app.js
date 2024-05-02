@@ -9,9 +9,11 @@ import { config } from 'dotenv'
 import userRoutes from '../src/user/user.routes.js'
 import hotelRoutes from '../src/hotel/hotel.routes.js'
 import serviceRoutes from '../src/service/service.routes.js'
-
-
-
+import categoryRoutes from '../src/category/category.routes.js'
+import invoiceRoutes from '../src/invoice/invoice.routes.js'
+import reservationRoutes from '../src/reservation/reservation.routes.js'
+import roomRoutes from '../src/room/room.routes.js'
+import eventRoutes from '../src/event/event.routes.js'
 //Configuration
 const app = express()
 config()
@@ -31,7 +33,11 @@ app.use(morgan('dev'))
 app.use('/user', userRoutes)
 app.use('/hotel',hotelRoutes)
 app.use('/service',serviceRoutes)
-
+app.use('/category', categoryRoutes)
+app.use('/invoice', invoiceRoutes)
+app.use('/reservation', reservationRoutes)
+app.use('/room', roomRoutes)
+app.use('/event', eventRoutes)
 
 //Levantamos el servidor
 

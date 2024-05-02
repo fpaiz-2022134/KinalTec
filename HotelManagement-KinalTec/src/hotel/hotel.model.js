@@ -1,6 +1,6 @@
 'use strict'
 
-import {Schema, model} from 'mongoose'
+import { Schema, model } from 'mongoose'
 
 const hotelSchema = Schema({
     name: {
@@ -32,10 +32,17 @@ const hotelSchema = Schema({
     service: {
         type: [{
             type: Schema.Types.ObjectId,
-            ref: 'Service',
+            ref: 'service',
             required: true
         }]
-    } 
+    }
+
+    ,
+    category: {
+        type: Schema.Types.ObjectId,
+        ref: 'category',
+        required: true
+    }
 })
 
-export default model ('hotel', hotelSchema)
+export default model('hotel', hotelSchema)
