@@ -35,6 +35,7 @@ export const isClient = async(req, res, next)=>{
     try{
         let { rol, username } = req.user
         if(!rol || rol !== 'CLIENT') return res.status(403).send({message: `You dont have access | username ${username}`})
+        next()
     }catch(err){
         console.error(err)
         return res.status(401).send({message: 'Unauthorized rol'})

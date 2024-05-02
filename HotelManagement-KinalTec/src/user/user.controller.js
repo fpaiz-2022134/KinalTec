@@ -24,7 +24,9 @@ export const registerU = async (req, res) => {
 
 export const defaultAdmin = async(nameA, surnameA, usernameA, emailA, passwordA, phoneA, rolA)=> {
     try{
+        //busca los usuarios que sean admin
         let admin = await User.findOne({ rol: 'ADMIN'})
+        //si no hay admin se crea un admin por default
         if(!admin){
             const data = {
                 name: nameA,
@@ -35,6 +37,7 @@ export const defaultAdmin = async(nameA, surnameA, usernameA, emailA, passwordA,
                 phone: phoneA,
                 rol: rolA
             }
+        // aqui se guardará el admin por defecto en data
             let user = new User(data)
             await user.save()
             return console.log('Default admin has been created')
@@ -102,13 +105,30 @@ export const updateU = async(req, res)=>{
         let data = req.body
         let update = checkUpdate(data, id)
         if(!update) return res.status(400).send({message: 'Have sumbitted some data that cannot be updated or missing data'})
+
+        // Usa los campos de Usuario
+        const currentUser = req.user
+
+        // Encuentre el usuario por el ID
+        const userToUpdate = await User.findOne({_id: id})
+
+        // Ver si el usuario tiene permisos para actualiar el usuario
+        if (currentUser.rol === 'ADMIN' && currentUser._id.toString() !== id) {
+            // Ver si el usuario que actualiza es ADMIN o CLIENTE
+            if (userToUpdate.rol === 'ADMIN') {
+                return res.status(403).send({message: 'You do not have permission to update this user'})
+            }
+        } else if (currentUser.rol === 'CLIENT' && currentUser._id.toString() !== id) {
+            return res.status(403).send({message: 'You do not have permission to update this user'})
+        }
+        // actualizar el usuario
         let updatedUser = await User.findOneAndUpdate(
             {_id: id},
             data,
             {new: true}
         )
         if(!updatedUser) return res.status(401).send({message: 'User not found and not updated'})
-            return res.send({message: 'Updated usuario', updatedUser})
+        return res.send({message: 'Updated user', updatedUser})
     }catch(err){
         console.error(err)
         if(err.keyValue.username) return res.status(400).send({message: `Username ${err.keyValue.username} is already taken`})
@@ -116,17 +136,42 @@ export const updateU = async(req, res)=>{
     }
 }
 
-export const deleteU = async(req, res)=>{
-    try{
-        let { id } = req.params
-        let deleteU = await User.findOneAndDelete({_id: id})
-        if(!deleteU) return res.status(404).send({message: 'User not found and not deleted'})
-        return res.send({message: `user ${deleteU} deleted sucecssfull`})
-    }catch(err){
-        console.error(err)
-        return res.status(500).send({message: 'Error deleting account'})
+export const deleteU = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const loggedInUserRol = req.user.rol;
+
+        // Verificar si el usuario tiene permiso para eliminar
+        if (loggedInUserRol === 'ADMIN') {
+            // Si el usuario es ADMIN, puede eliminar su perfil y los perfiles de los CLIENTES
+            const userToDelete = await User.findById(id);
+            if (!userToDelete) return res.status(404).send({ message: 'User not found' });
+
+            // Verificar si el usuario a eliminar es ADMIN, si lo es, no permitir la eliminación
+            if (userToDelete.rol === 'ADMIN') {
+                return res.status(403).send({ message: 'Cannot delete profiles of other admins' });
+            }
+        } else if (loggedInUserRol === 'CLIENT') {
+            // Si el usuario es CLIENTE, solo puede eliminar su propio perfil
+            if (id !== req.user.id) {
+                return res.status(403).send({ message: 'Cannot delete profiles of other users' });
+            }
+        } else {
+            return res.status(403).send({ message: 'Unauthorized' });
+        }
+
+        // Realizar la eliminación
+        const deletedUser = await User.findOneAndDelete({ _id: id });
+
+        if (!deletedUser) return res.status(404).send({ message: 'User not found' });
+
+        return res.send({ message: `User ${deletedUser} deleted successfully` });
+    } catch (err) {
+        console.error(err);
+        return res.status(500).send({ message: 'Error deleting account' });
     }
-}
+};
+
 
 export const getU = async(req, res)=>{
     try{

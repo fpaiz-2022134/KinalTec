@@ -9,14 +9,14 @@ const api = express.Router()
 //middleware
 //Role ADMIN
 api.get('/test', [validateJwt, isAdmin], test)
-api.put('/update/:id', [validateJwt, isAdmin], updateU)
-api.delete('/delete/:id', [validateJwt, isAdmin], deleteU)
+api.put('/update/:id', [validateJwt], updateU)
+api.delete('/delete/:id', [validateJwt], deleteU)
 
 //PUBLIC
 api.post('/register', registerU)
 api.post('/login', login)
-api.get('/get', getU)
-api.post('/search/:id', searchU)
-api.put('/changerol/:id', changeRol)
+api.get('/get', [validateJwt], getU)
+api.post('/search/:id',[validateJwt], searchU)
+api.put('/changerol/:id',[validateJwt, isAdmin], changeRol)
 
 export default api
