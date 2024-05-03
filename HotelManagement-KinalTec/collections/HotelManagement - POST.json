@@ -1,0 +1,1236 @@
+{
+    "info": {
+        "_postman_id": "472011ca-e19f-47f2-87c0-3cd8062d3f1c",
+        "name": "HotelManagement",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "service",
+            "item": [
+                {
+                    "name": "add",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "/service/save",
+                            "path": [
+                                "save"
+                            ],
+                            "host": [
+                                "service"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyNjM0MiwiZXhwIjoxNzE0NjM3MTQyfQ.arTOGIObKf76eGYKGCRVtEek-fxESSiiw7QtvMnXNGY"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "name",
+                                    "value": "Room service"
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "Atención al cuarto."
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "updateService",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "/service/update/66196ca7278160a307adb3d8",
+                            "path": [
+                                "update",
+                                "66196ca7278160a307adb3d8"
+                            ],
+                            "host": [
+                                "service"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyNjM0MiwiZXhwIjoxNzE0NjM3MTQyfQ.arTOGIObKf76eGYKGCRVtEek-fxESSiiw7QtvMnXNGY"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "name",
+                                    "value": "Piscina Olímpica"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "deleteService",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "/service/delete/66196ca7278160a307adb3d8",
+                            "path": [
+                                "delete",
+                                "66196ca7278160a307adb3d8"
+                            ],
+                            "host": [
+                                "service"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyNjM0MiwiZXhwIjoxNzE0NjM3MTQyfQ.arTOGIObKf76eGYKGCRVtEek-fxESSiiw7QtvMnXNGY"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "getService",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/service/get",
+                            "path": [
+                                "get"
+                            ],
+                            "host": [
+                                "service"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyNjM0MiwiZXhwIjoxNzE0NjM3MTQyfQ.arTOGIObKf76eGYKGCRVtEek-fxESSiiw7QtvMnXNGY"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "search",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/service/search/66331fce00041e50d999a667",
+                            "path": [
+                                "search",
+                                "66331fce00041e50d999a667"
+                            ],
+                            "host": [
+                                "service"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyNjM0MiwiZXhwIjoxNzE0NjM3MTQyfQ.arTOGIObKf76eGYKGCRVtEek-fxESSiiw7QtvMnXNGY"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "getServicesByHotel",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/service/gethotel/661e0114a94546ee4273c702",
+                            "path": [
+                                "gethotel",
+                                "661e0114a94546ee4273c702"
+                            ],
+                            "host": [
+                                "service"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyNjM0MiwiZXhwIjoxNzE0NjM3MTQyfQ.arTOGIObKf76eGYKGCRVtEek-fxESSiiw7QtvMnXNGY"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "hotel",
+            "item": [
+                {
+                    "name": "addHotel",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "/hotel/addHotel",
+                            "path": [
+                                "addHotel"
+                            ],
+                            "host": [
+                                "hotel"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYxNDk0LCJleHAiOjE3MTQxNzIyOTR9.bBJs2jK8lYSkhd7nX5f5Xoosa6bZI_6WTauR2KIZIbk"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "name",
+                                    "value": "Hotel Barcelo"
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "Hotel delujo posicionado entre los mejores del país."
+                                },
+                                {
+                                    "key": "address",
+                                    "value": "Zona 1, Guatemala."
+                                },
+                                {
+                                    "key": "phone",
+                                    "value": "22334455"
+                                },
+                                {
+                                    "key": "email",
+                                    "value": "hotelbarcelo3@gmail.com"
+                                },
+                                {
+                                    "key": "assessment",
+                                    "value": "7.5 (Bueno)"
+                                },
+                                {
+                                    "key": "service",
+                                    "value": "66196ca7278160a307adb3d8"
+                                },
+                                {
+                                    "key": "service",
+                                    "value": "66196ca7278160a307adb3d8",
+                                    "disabled": true
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "getHotels",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/hotel/getHotels",
+                            "path": [
+                                "getHotels"
+                            ],
+                            "host": [
+                                "hotel"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYxODQzLCJleHAiOjE3MTQxNzI2NDN9.Mv9PupQk_7RkgoVA8DUn1qQrrn_r5u3KdK7FGdihX0c"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "getHotel",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/hotel/getHotel/662c07668491de6d8a2fe10e",
+                            "path": [
+                                "getHotel",
+                                "662c07668491de6d8a2fe10e"
+                            ],
+                            "host": [
+                                "hotel"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYxODQzLCJleHAiOjE3MTQxNzI2NDN9.Mv9PupQk_7RkgoVA8DUn1qQrrn_r5u3KdK7FGdihX0c"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "updateHotel",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "/hotel/updateHotel/662c07668491de6d8a2fe10e",
+                            "path": [
+                                "updateHotel",
+                                "662c07668491de6d8a2fe10e"
+                            ],
+                            "host": [
+                                "hotel"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYxODQzLCJleHAiOjE3MTQxNzI2NDN9.Mv9PupQk_7RkgoVA8DUn1qQrrn_r5u3KdK7FGdihX0c"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "name",
+                                    "value": "Hotel California"
+                                },
+                                {
+                                    "key": "phone",
+                                    "value": "23435665"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "deleteHotel",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "/hotel/deleteHotel/662c07668491de6d8a2fe10e",
+                            "path": [
+                                "deleteHotel",
+                                "662c07668491de6d8a2fe10e"
+                            ],
+                            "host": [
+                                "hotel"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYxODQzLCJleHAiOjE3MTQxNzI2NDN9.Mv9PupQk_7RkgoVA8DUn1qQrrn_r5u3KdK7FGdihX0c"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "user",
+            "item": [
+                {
+                    "name": "register",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "/user/register",
+                            "path": [
+                                "register"
+                            ],
+                            "host": [
+                                "user"
+                            ]
+                        },
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "name",
+                                    "value": "Julian"
+                                },
+                                {
+                                    "key": "surname",
+                                    "value": "Gonzalez"
+                                },
+                                {
+                                    "key": "username",
+                                    "value": "jgonzalez"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "12345678"
+                                },
+                                {
+                                    "key": "phone",
+                                    "value": "12345678"
+                                },
+                                {
+                                    "key": "email",
+                                    "value": "jgonzalez@gmail.com"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "login",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "/user/login",
+                            "path": [
+                                "login"
+                            ],
+                            "host": [
+                                "user"
+                            ]
+                        },
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "username",
+                                    "value": "fpaiz2"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "12345678"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "update",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "/user/update/6618bc9b0b73b3d0f388f684",
+                            "path": [
+                                "update",
+                                "6618bc9b0b73b3d0f388f684"
+                            ],
+                            "host": [
+                                "user"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDM2MTc1NiwiZXhwIjoxNzE0MzcyNTU2fQ.smbbb92yCXl4v31AkRiWofG_LbP3ncgww3e_wUP4iJw"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "password",
+                                    "value": "12345678"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "changeRol",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "/user/changerol/66332565e0629081434ec58e",
+                            "path": [
+                                "changerol",
+                                "66332565e0629081434ec58e"
+                            ],
+                            "host": [
+                                "user"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyODM2NywiZXhwIjoxNzE0NjM5MTY3fQ.ukVeufCnWTjRRf5_KJnKMadaeHoQ7rK6lT4cHp2-sLQ"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "rol",
+                                    "value": "ADMIN"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "delete",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "/user/delete/66332565e0629081434ec58e",
+                            "path": [
+                                "delete",
+                                "66332565e0629081434ec58e"
+                            ],
+                            "host": [
+                                "user"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyODM2NywiZXhwIjoxNzE0NjM5MTY3fQ.ukVeufCnWTjRRf5_KJnKMadaeHoQ7rK6lT4cHp2-sLQ"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "get",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/user/get",
+                            "path": [
+                                "get"
+                            ],
+                            "host": [
+                                "user"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyODM2NywiZXhwIjoxNzE0NjM5MTY3fQ.ukVeufCnWTjRRf5_KJnKMadaeHoQ7rK6lT4cHp2-sLQ"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "search",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/user/search/66197282044facc83724570d",
+                            "path": [
+                                "search",
+                                "66197282044facc83724570d"
+                            ],
+                            "host": [
+                                "user"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYyODM2NywiZXhwIjoxNzE0NjM5MTY3fQ.ukVeufCnWTjRRf5_KJnKMadaeHoQ7rK6lT4cHp2-sLQ"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "room",
+            "item": [
+                {
+                    "name": "addRoom",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "/room/saveRoom",
+                            "path": [
+                                "saveRoom"
+                            ],
+                            "host": [
+                                "room"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMTgxNywiZXhwIjoxNzE0NjQyNjE3fQ.rAw-w8rymdxk42PYUbJw_QwO2Wkz4_MGfSfd4UZpNuE"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "number",
+                                    "value": "1"
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "Habitación con servicios incluidos, televisión y minibar"
+                                },
+                                {
+                                    "key": "capacity",
+                                    "value": "Una o dos personas"
+                                },
+                                {
+                                    "key": "type",
+                                    "value": "Habitación individual"
+                                },
+                                {
+                                    "key": "price",
+                                    "value": "5000"
+                                },
+                                {
+                                    "key": "status",
+                                    "value": "DISPONIBLE"
+                                },
+                                {
+                                    "key": "hotelid",
+                                    "value": "661e0114a94546ee4273c702"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "updateRoom",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "/room/update/662f119a5de16b6189664328",
+                            "path": [
+                                "update",
+                                "662f119a5de16b6189664328"
+                            ],
+                            "host": [
+                                "room"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMTgxNywiZXhwIjoxNzE0NjQyNjE3fQ.rAw-w8rymdxk42PYUbJw_QwO2Wkz4_MGfSfd4UZpNuE"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "capacity",
+                                    "value": "5 personas."
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "deleteRoom",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "/room/delete/662f119a5de16b6189664328",
+                            "path": [
+                                "delete",
+                                "662f119a5de16b6189664328"
+                            ],
+                            "host": [
+                                "room"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMTgxNywiZXhwIjoxNzE0NjQyNjE3fQ.rAw-w8rymdxk42PYUbJw_QwO2Wkz4_MGfSfd4UZpNuE"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "getRooms",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/room/getRooms",
+                            "path": [
+                                "getRooms"
+                            ],
+                            "host": [
+                                "room"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMTgxNywiZXhwIjoxNzE0NjQyNjE3fQ.rAw-w8rymdxk42PYUbJw_QwO2Wkz4_MGfSfd4UZpNuE"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "searchRoom",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/room/searchRoom/66333788c71a32459902872c",
+                            "path": [
+                                "searchRoom",
+                                "66333788c71a32459902872c"
+                            ],
+                            "host": [
+                                "room"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMTgxNywiZXhwIjoxNzE0NjQyNjE3fQ.rAw-w8rymdxk42PYUbJw_QwO2Wkz4_MGfSfd4UZpNuE"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "event",
+            "item": [
+                {
+                    "name": "saveEvent",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "/event/saveEvent",
+                            "path": [
+                                "saveEvent"
+                            ],
+                            "host": [
+                                "event"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJmMTZiOTM2ODgzNWE5NDdmY2RjZjYiLCJ1c2VybmFtZSI6ImFnb256YWxleiIsIm5hbWUiOiJBbGVqYW5kcm8iLCJyb2wiOiJDTElFTlQiLCJpYXQiOjE3MTQ2Mjk0NjAsImV4cCI6MTcxNDY0MDI2MH0.WDXopxFFvB9E_wSeMDsK6KSIzPvlhcnbh2QgNmwQ2k4"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "name",
+                                    "value": "Boda"
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "Boda de mario y july"
+                                },
+                                {
+                                    "key": "entryDate",
+                                    "value": "2025-09-10"
+                                },
+                                {
+                                    "key": "departureDate",
+                                    "value": "2025-09-11"
+                                },
+                                {
+                                    "key": "price",
+                                    "value": "3000"
+                                },
+                                {
+                                    "key": "user",
+                                    "value": "662f16b9368835a947fcdcf6"
+                                },
+                                {
+                                    "key": "hotel",
+                                    "value": "661e0114a94546ee4273c702"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "updateEvent",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "/event/updateEvent/66332cd07f8ef52a292cfc93",
+                            "path": [
+                                "updateEvent",
+                                "66332cd07f8ef52a292cfc93"
+                            ],
+                            "host": [
+                                "event"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMDAzOSwiZXhwIjoxNzE0NjQwODM5fQ.j2Ac7fH-jJAS4uei8W150N79MWr2oj0pyS-ZPrcj6II"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "entryDate",
+                                    "value": "2024-09-09"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "changeStatus",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "/event/changeStatus/66332cd07f8ef52a292cfc93",
+                            "path": [
+                                "changeStatus",
+                                "66332cd07f8ef52a292cfc93"
+                            ],
+                            "host": [
+                                "event"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMDAzOSwiZXhwIjoxNzE0NjQwODM5fQ.j2Ac7fH-jJAS4uei8W150N79MWr2oj0pyS-ZPrcj6II"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "search",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/event/search/66332cd07f8ef52a292cfc93",
+                            "path": [
+                                "search",
+                                "66332cd07f8ef52a292cfc93"
+                            ],
+                            "host": [
+                                "event"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMDAzOSwiZXhwIjoxNzE0NjQwODM5fQ.j2Ac7fH-jJAS4uei8W150N79MWr2oj0pyS-ZPrcj6II"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "getEvents",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/event/getEvents",
+                            "path": [
+                                "getEvents"
+                            ],
+                            "host": [
+                                "event"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMDAzOSwiZXhwIjoxNzE0NjQwODM5fQ.j2Ac7fH-jJAS4uei8W150N79MWr2oj0pyS-ZPrcj6II"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "reservation",
+            "item": [
+                {
+                    "name": "addReservation",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "/reservation/addReservation",
+                            "path": [
+                                "addReservation"
+                            ],
+                            "host": [
+                                "reservation"
+                            ]
+                        },
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "description",
+                                    "value": "Reservación de una noche"
+                                },
+                                {
+                                    "key": "entryDate",
+                                    "value": "2024-08-28"
+                                },
+                                {
+                                    "key": "departureDate",
+                                    "value": "2024-04-29"
+                                },
+                                {
+                                    "key": "price",
+                                    "value": "5000"
+                                },
+                                {
+                                    "key": "userId",
+                                    "value": "662f16b9368835a947fcdcf6"
+                                },
+                                {
+                                    "key": "roomId",
+                                    "value": "662f119a5de16b6189664328"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "updateReservation",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "/reservation/updateR/662f1714368835a947fcdcfa",
+                            "path": [
+                                "updateR",
+                                "662f1714368835a947fcdcfa"
+                            ],
+                            "host": [
+                                "reservation"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJmMTZiOTM2ODgzNWE5NDdmY2RjZjYiLCJ1c2VybmFtZSI6ImFnb256YWxleiIsIm5hbWUiOiJBbGVqYW5kcm8iLCJyb2wiOiJDTElFTlQiLCJpYXQiOjE3MTQ2MzE2MDMsImV4cCI6MTcxNDY0MjQwM30.L-0bqs81UkhIpPRdVHvhCzOLnMbuuxJ1-05cHU3AaNg"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "description",
+                                    "value": "Reservación de dos noches."
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "changeStatus",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "/reservation/changeStatus/662f13c3965ccec9d538f9c8",
+                            "path": [
+                                "changeStatus",
+                                "662f13c3965ccec9d538f9c8"
+                            ],
+                            "host": [
+                                "reservation"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMTgxNywiZXhwIjoxNzE0NjQyNjE3fQ.rAw-w8rymdxk42PYUbJw_QwO2Wkz4_MGfSfd4UZpNuE"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "searchReservation",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/reservation/searchReservation/662f13c3965ccec9d538f9c8",
+                            "path": [
+                                "searchReservation",
+                                "662f13c3965ccec9d538f9c8"
+                            ],
+                            "host": [
+                                "reservation"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDYzMTgxNywiZXhwIjoxNzE0NjQyNjE3fQ.rAw-w8rymdxk42PYUbJw_QwO2Wkz4_MGfSfd4UZpNuE"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "invoice",
+            "item": [
+                {
+                    "name": "addInvoice",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "/invoice/addInvoice",
+                            "path": [
+                                "addInvoice"
+                            ],
+                            "host": [
+                                "invoice"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDM2MzA0MSwiZXhwIjoxNzE0MzczODQxfQ.rSX92bfH11_dWx1buyiaoxW0YpUlUUYN3fOKJgxa4ZU"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "nit",
+                                    "value": "234567-33"
+                                },
+                                {
+                                    "key": "paymentMethod",
+                                    "value": "VISA"
+                                },
+                                {
+                                    "key": "reservation",
+                                    "value": "662f1714368835a947fcdcfa"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "updateInvoice",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "/invoice/updateInvoice/662f1938bd57b2db470674ba",
+                            "path": [
+                                "updateInvoice",
+                                "662f1938bd57b2db470674ba"
+                            ],
+                            "host": [
+                                "invoice"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDQwNTk2NSwiZXhwIjoxNzE0NDE2NzY1fQ._wjx44S_k_PwkCUt7cnWCFglXdoTlLoNgz5AahA0wdM"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "paymentMethod",
+                                    "value": "MASTERCARD"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "getMyInvoices",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/invoice/getMyInvoices",
+                            "path": [
+                                "getMyInvoices"
+                            ],
+                            "host": [
+                                "invoice"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJmMTZiOTM2ODgzNWE5NDdmY2RjZjYiLCJ1c2VybmFtZSI6ImFnb256YWxleiIsIm5hbWUiOiJBbGVqYW5kcm8iLCJyb2wiOiJDTElFTlQiLCJpYXQiOjE3MTQ0OTIzNTYsImV4cCI6MTcxNDUwMzE1Nn0.kuDkjBXXsm2YhL2KB5ncnGcVe1F0Z1uq9Z1BATjdhUU"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "getInvoices",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/invoice/getInvoices",
+                            "path": [
+                                "getInvoices"
+                            ],
+                            "host": [
+                                "invoice"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDQ5MjQzMCwiZXhwIjoxNzE0NTAzMjMwfQ.2bvwmtU7ho-wd8Oi2juyHEDgF1PfiPI2hbQS3ynIFvI"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "searchInvoice",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/invoice/searchInvoice/662f1938bd57b2db470674ba",
+                            "path": [
+                                "searchInvoice",
+                                "662f1938bd57b2db470674ba"
+                            ],
+                            "host": [
+                                "invoice"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE5NzI4MjA0NGZhY2M4MzcyNDU3MGQiLCJ1c2VybmFtZSI6ImZwYWl6MiIsIm5hbWUiOiJGcmFuY28iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTcxNDQ5MjQzMCwiZXhwIjoxNzE0NTAzMjMwfQ.2bvwmtU7ho-wd8Oi2juyHEDgF1PfiPI2hbQS3ynIFvI"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "category",
+            "item": [
+                {
+                    "name": "addCategory",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "/category/addCategory",
+                            "path": [
+                                "addCategory"
+                            ],
+                            "host": [
+                                "category"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYzMDY2LCJleHAiOjE3MTQxNzM4NjZ9.ZMBs74936uCYWpa8NIuF3wCdP2uuTy7QduNNGPWPabg"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "name",
+                                    "value": "Resort"
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "Establecimiento grande."
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "getCategories",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/category/getCategories",
+                            "path": [
+                                "getCategories"
+                            ],
+                            "host": [
+                                "category"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYzMDY2LCJleHAiOjE3MTQxNzM4NjZ9.ZMBs74936uCYWpa8NIuF3wCdP2uuTy7QduNNGPWPabg"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "getCategory",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "/category/getCategory/662c0e9daecf15fb4e5388b9",
+                            "path": [
+                                "getCategory",
+                                "662c0e9daecf15fb4e5388b9"
+                            ],
+                            "host": [
+                                "category"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJjMDVjYTBkMDE4Yzg1ODE0Nzg4YTUiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsInJvbCI6IkFETUlOIiwiaWF0IjoxNzE0MTYzMDY2LCJleHAiOjE3MTQxNzM4NjZ9.ZMBs74936uCYWpa8NIuF3wCdP2uuTy7QduNNGPWPabg"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "updateCategory",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "/category/updateCategory/662c0e9daecf15fb4e5388b9",
+                            "path": [
+                                "updateCategory",
+                                "662c0e9daecf15fb4e5388b9"
+                            ],
+                            "host": [
+                                "category"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "token",
+                                "value": ""
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "name",
+                                    "value": "Hotel Resort"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "deleteCategory",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "/category/deleteCategory/661e1b5dac94aec91438cc6d",
+                            "path": [
+                                "deleteCategory",
+                                "661e1b5dac94aec91438cc6d"
+                            ],
+                            "host": [
+                                "category"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,11 +1,14 @@
-export const Reservation = ({ user, hotel, rooms, cNoches, subTotal}) => {
+export const Reservation = ({ descripcion, entryDate, departureDate, estado, price, user, hotel, rooms,  }) => {
     return (
         <>
-            <td>{user}</td>
+            <td>{descripcion}</td>
+            <td>{entryDate}</td>
+            <td>{departureDate}</td>
+            <td>{estado}</td>
+            <td>{price}</td>                       
+            <td>{user}</td> 
             <td>{hotel}</td>
-            <td>{rooms}</td>
-            <td>{cNoches}</td>
-            <td>{subTotal}</td>                                        
+            <td>{rooms}</td>                
         </>
     )
 }

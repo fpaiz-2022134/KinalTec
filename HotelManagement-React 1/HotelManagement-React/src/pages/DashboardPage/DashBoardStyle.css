@@ -1,31 +1,69 @@
-/* TABLE (RESPONSIVE) */
+/* Responsive Table */
 @media screen and (max-width: 600px) {
-	table {
-		width: 100%;
-	}
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
 
-	thead {
-		display: none;
-	}
+    thead {
+        display: none;
+    }
 
-	tr:nth-of-type(2n) {
-		background-color: inherit;
-	}
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
 
-	tr td:first-child {
-		background: #f0f0f0;
-		font-weight: bold;
-		font-size: 1.3em;
-	}
+    tr td:first-child {
+        background: #f0f0f0;
+        font-weight: bold;
+        font-size: 1.2em; /* Reduced font size */
+    }
 
-	tbody td {
-		display: block;
-		text-align: center;
-	}
+    tbody td {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid #ddd; /* Add border between table rows */
+        padding: 8px; /* Add padding for better spacing */
+    }
 
-	tbody td:before {
-		content: attr(data-th);
-		display: block;
-		text-align: center;
-	}
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.9em; /* Reduced font size */
+    }
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #343a40;
+    font-family: 'Arial', sans-serif; /* Change font family */
+    padding: 10px 0; /* Add padding to navbar */
+}
+
+.navbar-brand {
+    color: #17a2b8 !important;
+    font-size: 1.5em; /* Increase font size */
+    font-weight: bold; /* Add font weight */
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 1.1em; /* Increase font size */
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+/* Social Media Icons */
+.navbar-nav .nav-item i {
+    font-size: 1.8rem; /* Increase icon size */
+}
+
+/* Content Container */
+.content {
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif; /* Change font family */
 }

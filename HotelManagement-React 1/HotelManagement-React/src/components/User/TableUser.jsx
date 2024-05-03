@@ -8,18 +8,6 @@ export const TableUser = () => {
     const [iAccount, setIDAccount] = useState();
     const [users, setUsers] = useState([{}]);
 
-    const getUsers = async () => {
-        try {
-            const { data } = await axios.get('http://localhost:2880/user/getAdmins')
-            if (data.users) {
-                setUsers(data.users)
-            }
-        } catch (err) {
-            console.log(err);
-            throw new Error(err.response.message || data, "Error getting users");
-        }
-
-    };
 
 
     const clear = async () => {

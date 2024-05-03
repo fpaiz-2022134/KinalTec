@@ -64,7 +64,7 @@ export const DashboardPage = () => {
             </li>
             <li onClick={() => logOut()} className="nav-item">
               <Link className="nav-link">
-                LogOut<i className="bi bi-star-fill"></i>
+                Cerrar Sesion<i className="bi bi-star-fill"></i>
               </Link>
             </li>
           </>
@@ -87,7 +87,7 @@ export const DashboardPage = () => {
             </li>
             <li onClick={() => logOut()} className="nav-item">
               <Link className="nav-link">
-                LogOut<i className="bi bi-star-fill"></i>
+                Cerrar Sesion<i className="bi bi-star-fill"></i>
               </Link>
             </li>
           </>
@@ -95,17 +95,17 @@ export const DashboardPage = () => {
           <>
             <li className="nav-item">
               <Link to={"reservation"} className="nav-link">
-                Reservation<i className="bi bi-star-fill"></i>
+                Reservaciones
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link">
-                CLIENT<i className="bi bi-star-fill"></i>
+                Cliente
               </Link>
             </li>
             <li onClick={() => logOut()} className="nav-item">
               <Link className="nav-link">
-                LogOut<i className="bi bi-star-fill"></i>
+                Cerrar Sesion
               </Link>
             </li>
           </>
@@ -136,7 +136,6 @@ export const DashboardPage = () => {
         <nav className="navbar navbar-expand-md navbar-dark bg-dark">
           <div className="container-fluid">
             <a className="navbar-brand active">
-              <i className="bi bi-person-circle"></i>
               <Link to={""}>
                 <span className="text-info"> Dashboard</span>
               </Link>
@@ -158,21 +157,10 @@ export const DashboardPage = () => {
               </ul>
               <hr className="d-md-none text-white-50" />
               <ul className="navbar-nav  flex-row flex-wrap text-light">
-                <li className="nav-item col-6 col-md-auto p-3">
-                  <i className="bi bi-twitter"></i>
-                  <small className="d-md-none ms-2">Twitter</small>
-                </li>
-                <li className="nav-item col-6 col-md-auto p-3">
-                  <i className="bi bi-github"></i>
-                  <small className="d-md-none ms-2">GitHub</small>
-                </li>
+               
                 <li className="nav-item col-6 col-md-auto p-3">
                   <i className="bi bi-whatsapp"></i>
                   <small className="d-md-none ms-2">WhatsApp</small>
-                </li>
-                <li className="nav-item col-6 col-md-auto p-3">
-                  <i className="bi bi-facebook"></i>
-                  <small className="d-md-none ms-2">Facebook</small>
                 </li>
               </ul>
             </div>
