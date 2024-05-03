@@ -1,0 +1,104 @@
+body {
+  background-color: #f2f2f2;
+  background: url('../assets/fondo.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+  .container {
+    max-width: 800px; 
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 100px; 
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.root {
+  background-color: rgba(255, 255, 255, 0.9); /* ajusta la opacidad del fondo */
+  width: 40em;
+  padding: 30px; /* aumenta el padding para hacer el fondo más ancho */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    border: 1px solid #61dafbaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #61dafbaa; 
+    color: ff6b6b;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #61dafbaa; 
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #61dafbaa;
+    border-radius: 4px;
+  }
+  
+  li > div {
+    margin-bottom: 10px;
+  }
+  
+  li > div:first-child {
+    display: flex;
+    align-items: center;
+  }
+  
+  li > div:last-child {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  span {
+    font-size: 18px;
+  }
+  
+  button {
+    background-color: #6cb2eb; 
+  }
+  
+  button:hover {
+    background-color: #478cd7; 
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
