@@ -52,7 +52,7 @@ export const updateStorageMachine = async (req, res) => {
     }
 }
 
-export const changeStatus = async (req, res) => {
+/* export const changeStatus = async (req, res) => {
     try {
         let { id } = req.params
         let data = req.body
@@ -74,13 +74,53 @@ export const changeStatus = async (req, res) => {
         return res.status(500).send({ message: 'Error updating storage machine.', err })
     }
      
+} */
+
+export const changeStatus = async (req, res) => {
+    try {
+        let { id } = req.params;
+
+        // Busca el documento por su id
+        let storageMachine = await StorageMachine.findById(id);
+
+        // Verifica si el documento existe
+        if (!storageMachine) {
+            return res.status(404).send({ message: 'Storage machine not found.' });
+        }
+
+        // Cambia el estado de false a true y viceversa
+        storageMachine.status = !storageMachine.status;
+
+        // Guarda el documento actualizado
+        let updatedStorageMachine = await storageMachine.save();
+
+        return res.send({ message: 'Status updated successfully', updatedStorageMachine });
+    } catch (err) {
+        console.error(err);
+        return res.status(500).send({ message: 'Error updating status.', err });
+    }
 }
 
 
 export const getTasks = async (req, res) => {
     try {
-       let tasks = await StorageMachine.find()
-        return res.status(200).send({ tasks })
+       let data = await StorageMachine.find()
+
+       const tasks = data
+        .map((data) => {
+            return {
+                id: data._id,
+                name: data.name,
+                surname: data.surname,
+                taskName: data.taskName,
+                taskDescription: data.taskDescription,
+                entryDate: data.entryDate,
+                departureDate: data.departureDate,
+                status: data.status
+            }
+        })
+
+        return res.status(200).json({ tasks })
     } catch (err) {
         console.error(err)
          return res.status(500).send({ message: 'Error getting tasks.', err })

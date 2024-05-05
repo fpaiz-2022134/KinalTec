@@ -1,12 +1,13 @@
 import { useState } from "react";
+import { updateTaskRequest } from "../services/api";
 
-import { getTasksRequest } from "../services/api";
+import toast from "react-hot-toast";
 
-export const useGetTasks =()=>{
-    const [tasks, setTasks] = useState(null)
+export const useUpdateTask = () => {
+    const [updatedTask, setUpdatedTask] = useState(null)
 
-    const getTasks = async () => {
-        const response = await getTasksRequest()
+    const updateTask = async (id, task) => {
+        const response = await updateTaskRequest(id, task)
 
         if(response.error){
             if(response?.err?.response?.data?.errors){
@@ -22,15 +23,18 @@ export const useGetTasks =()=>{
                 response?.err?.data?.msg ||
                 'Error al registrar el usuario, intenta de nuevo.'
               )
+              
           }
           console.log(response)
-          
-        setTasks(response.data.tasks)
-    }
 
+          
+        setUpdatedTask(response.data)
+        toast.success('¡Tarea actualizada correctamente!');
+    }
     return {
-        tasks,
-        isFetching: !tasks,
-        getTasks
+        updatedTask,
+        isFetching: !updatedTask,
+        updateTask
     }
 }
+

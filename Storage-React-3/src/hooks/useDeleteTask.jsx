@@ -1,13 +1,10 @@
-import { useState } from "react";
+import { deleteTaskRequest } from "../services/api";
 
-import { getTasksRequest } from "../services/api";
+import toast from "react-hot-toast";
 
-export const useGetTasks =()=>{
-    const [tasks, setTasks] = useState(null)
-
-    const getTasks = async () => {
-        const response = await getTasksRequest()
-
+export const useDeleteTask = () => {
+    const deleteTask = async (id) => {
+        const response = await deleteTaskRequest(id)
         if(response.error){
             if(response?.err?.response?.data?.errors){
               let arr = response?.err?.response?.data?.errors
@@ -20,17 +17,13 @@ export const useGetTasks =()=>{
               return toast.error(
                 response?.err?.response?.data?.msg ||
                 response?.err?.data?.msg ||
-                'Error al registrar el usuario, intenta de nuevo.'
+                'Error al eliminar la tarea, intenta de nuevo.'
               )
           }
           console.log(response)
-          
-        setTasks(response.data.tasks)
     }
 
     return {
-        tasks,
-        isFetching: !tasks,
-        getTasks
+        deleteTask
     }
 }

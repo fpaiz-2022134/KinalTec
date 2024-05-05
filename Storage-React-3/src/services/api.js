@@ -16,9 +16,9 @@ export const createTask = async (data) => {
     }
 }
 
-/* export const changeStatus = async (id, data) => {
+ export const changeStatus = async (id, data) => {
     try {
-      return await apiClient.get(`/changeStatus/${id}`, { params: data });
+      return await apiClient.put(`/changeStatus/${id}`, data);
     } catch (err) {
       return {
         error: true,
@@ -27,7 +27,7 @@ export const createTask = async (data) => {
     }
   };
   
-  export const updateTask = async (id, data) => {
+  export const updateTaskRequest = async (id, data) => {
     try {
       return await apiClient.put(`/update/${id}`, data);
     } catch (err) {
@@ -38,7 +38,7 @@ export const createTask = async (data) => {
     }
   };
   
-  export const deleteTask = async (id) => {
+  export const deleteTaskRequest = async (id) => {
     try {
       return await apiClient.delete(`/delete/${id}`);
     } catch (err) {
@@ -47,7 +47,7 @@ export const createTask = async (data) => {
         err
       };
     }
-  }; */
+  }; 
   
   export const getTasksRequest = async () => {
     try {

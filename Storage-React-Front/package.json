@@ -1,5 +1,5 @@
 {
-  "name": "storage-react",
+  "name": "storage-react-front",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,7 +14,6 @@
     "bootstrap": "^5.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hot-toast": "^2.4.1",
     "react-router-dom": "^6.23.0",
     "react-spinners": "^0.13.8"
   },
