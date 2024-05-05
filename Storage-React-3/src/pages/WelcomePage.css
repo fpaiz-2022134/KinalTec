@@ -1,28 +1,35 @@
 .welcome-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin: 50px auto;
-    max-width: 400px;
-  }
-  
-  .welcome-container h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .welcome-container .btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .welcome-container .btn:hover {
-    background-color: #0056b3;
-  }
+  background-color: #f5f5f5; 
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  margin: 50px auto;
+  max-width: 400px;
+  transition: all 0.3s ease; 
+}
+
+.welcome-container:hover {
+  transform: translateY(-5px); 
+}
+
+.welcome-container h1 {
+  font-size: 28px; 
+  margin-bottom: 30px; 
+  color: #333; 
+}
+
+.welcome-container .btn {
+  background-color: #ff6f61;
+  color: black;
+  border: none;
+  padding: 12px 24px; 
+  font-size: 20px;
+  border-radius: 30px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.welcome-container .btn:hover {
+  background-color: white; 
+}
