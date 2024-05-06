@@ -2,18 +2,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem; 
   margin-top: 2rem;
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.5); 
 }
 
 .task-title {
-  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 3rem; 
+  font-weight: bold; 
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
-
 .task-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1rem;
 }
 
 .task-card {
@@ -84,13 +90,15 @@
 
 .task-card-buttons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 8px; 
 }
 
 .task-card-button {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background-color: #ff6f61;
+  background-color: #ff6f61   ;
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
@@ -98,5 +106,5 @@
 }
 
 .task-card-button:hover {
-  background-color: #478cd7;
+  background-color: #3fcfcf;
 }

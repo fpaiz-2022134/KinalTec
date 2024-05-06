@@ -195,6 +195,7 @@ const TodoList = () => {
         /* validationMessage={emailValidationMessage}  */
         />
 
+        <div className='container-btn'>
         <button
           disabled={isSubmitButtonDisable}
         >
@@ -203,6 +204,7 @@ const TodoList = () => {
         <Link to="/taskPage/tasks">
           <button >Mis tareas</button>
         </Link>
+        </div>
       </form>
     </div>
 

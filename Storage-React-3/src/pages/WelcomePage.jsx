@@ -4,7 +4,8 @@ import './WelcomePage.css'
 
 const WelcomePage = () => {
   return (
-    <div className="welcome-container">
+    <div className='center'>
+      <div className="welcome-container">
       <h1>Bienvenido a tu almacenadora</h1>
       <Link to="/localStorage">
         <button className="btn">Crear una tarea</button>
@@ -12,6 +13,7 @@ const WelcomePage = () => {
       <Link to="/taskPage/tasks">
         <button className="btn">Ir a mi lista de tareas</button>
       </Link>
+    </div>
     </div>
   );
 };
