@@ -84,7 +84,9 @@ export const Task = ({ tasks = [] }) => {
   }
   return (
     <div className="task-container">
+      <div>
       <h2 className="task-title">My Tasks</h2>
+      </div>
       <Link to="/localStorage" className="add-task-btn">Agregar Tarea</Link>
       <div className="task-list">
         {tasks.map(task => (
@@ -153,7 +155,7 @@ export const Task = ({ tasks = [] }) => {
           </div>
 
           <div className="m-3 justify-content-center d-flex">
-            <button onClick={update} className="btn btn-success">Update</button>
+            <button onClick={update} className="btn-update">Update</button>
           </div>
         </div>
       </div>

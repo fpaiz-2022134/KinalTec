@@ -11,6 +11,14 @@ export const saveStorageMachine = async (req, res) => {
     try {
         let data = req.body
         data.status = true
+
+        if (data.entryDate > data.departureDate) {
+            return res.status(400).send({message: 'You cannot set a date out of range.'})
+        }
+        if (data.departureDate < data.entryDate) {
+            return res.status(400).send({message: 'You cannot set a date out of range.'})
+        }
+
         let storageMachine = new StorageMachine(data)
         await storageMachine.save()
         return res.status(200).send({ message: 'Storage Machine saved successfully.' })

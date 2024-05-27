@@ -1,19 +1,27 @@
+body {
+  background-image: url('../assets/fondoStorage.jpg');
+  background-size: cover; /* La imagen de fondo abarcará toda la pantalla */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen de fondo mientras se desplaza por la página */
+  background-color: rgba(255, 255, 255, 0.5); /* Define el color de fondo con transparencia */
+}
+
 .task-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem; 
   margin-top: 2rem;
-  box-shadow: 0 0 20px rgba(255, 165, 0, 0.5); 
+  /* box-shadow: 0 0 20px rgba(255, 165, 0, 0.5);  */
 }
 
 .task-title {
   text-align: center;
-  padding-bottom: 20px;
-  font-size: 3rem; 
-  font-weight: bold; 
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  font-size: 4rem; /* Aumenta el tamaño de la fuente */
+  font-weight: bold;
+  margin-bottom: 2rem; /* Aumenta el espacio inferior */
+  font-family: 'Arial', sans-serif; /* Utiliza una fuente elegante y profesional */
+  letter-spacing: 1px; /* Agrega un espaciado entre letras */
 }
 .task-list {
   display: flex;
@@ -58,9 +66,11 @@
 }
 
 .task-card-title {
+  text-align: center;
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   color: #333333;
+  background-color: #a3e3f5;
 }
 
 .task-card-text {
@@ -107,4 +117,70 @@
 
 .task-card-button:hover {
   background-color: #3fcfcf;
+}
+
+
+
+
+/* SIDEBAR */
+
+
+.offcanvas {
+  width: 300px; /* Define el ancho del sidebar */
+  background-color: #ffffff; /* Color de fondo */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.offcanvas-header {
+  background-color: #f0f0f0; /* Color de fondo del encabezado */
+  padding: 15px; /* Espaciado interno */
+  border-bottom: 1px solid #cccccc; /* Borde inferior */
+}
+
+.offcanvas-title {
+  font-size: 1.5rem; /* Tamaño de fuente del título */
+  margin: 0; /* Elimina el margen superior e inferior */
+}
+
+.offcanvas-body {
+  padding: 20px; /* Espaciado interno del cuerpo */
+}
+
+.m-3 {
+  margin-bottom: 1rem; /* Espacio entre elementos */
+}
+
+.form-label {
+  font-weight: bold; /* Negrita para las etiquetas */
+}
+
+.form-control {
+  width: 100%; /* Ancho completo */
+  padding: 0.375rem 0.75rem; /* Espaciado interno */
+  font-size: 1rem; /* Tamaño de fuente */
+  line-height: 1.5; /* Altura de línea */
+  color: #495057; /* Color del texto */
+  background-color: #ffffff; /* Color de fondo */
+  background-clip: padding-box; /* Estilo de fondo */
+  border: 1px solid #ced4da; /* Borde */
+  border-radius: 0.25rem; /* Radio de borde */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Transición */
+}
+
+.btn-update {
+  color: #ffffff; /* Color del texto */
+  background-color: #218838; /* Color de fondo */
+  border-color: #218838; /* Color del borde */
+  padding: 0.375rem 0.75rem; /* Espaciado interno */
+  font-size: 1rem; /* Tamaño de fuente */
+  line-height: 1.5; /* Altura de línea */
+  border-radius: 0.25rem; /* Radio de borde */
+  cursor: pointer; /* Cursor */
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Transición */
+}
+
+.btn-update:hover {
+  color: #ffffff; /* Color del texto al pasar el ratón */
+  background-color: #3fcfcf; /* Color de fondo al pasar el ratón */
+  border-color: #3fcfcf; /* Color del borde al pasar el ratón */
 }
